@@ -1,0 +1,57 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+  - const title = "Fun formula"
+
+block content
+    include ../blocks/modules/header/header
+    include ../blocks/components/main-slider/main-slider
+    include ../blocks/components/home-info-block/home-info-block
+    section.callbackFormBlock.firstBackground
+        .container
+            h3.callbackFormTitle Получите три сценария и расчет стоимости
+            include ../blocks/components/callback-form/callback-form
+    section.cardsWrapper
+        .titleBlock
+            .container
+                h2 Выберите сценарий детского праздника
+        include ../blocks/components/cards-slider/cards-slider
+    section.callbackFormBlock.secondBackground
+        .container
+            h3.callbackFormTitle Забронируйте сценарий на нужную дату
+            include ../blocks/components/callback-form/callback-form
+    section.cardsWrapper
+        .titleBlock
+            .container
+                h2 Выберите Мастер-класс на детский праздник
+        include ../blocks/components/cards-slider/cards-slider
+    section.callbackFormBlock.thirdBackground
+        .container
+            h3.callbackFormTitle
+                | Обращаетесь к нам в первый раз?
+                br
+                |Заполните поля и получите подарок!
+            include ../blocks/components/callback-form/callback-form
+    section.cardsWrapper
+        .titleBlock
+            .container
+                h2 Выберите шоу на детский праздник
+        include ../blocks/components/cards-slider/cards-slider
+    section.callbackFormBlock.fourthBackground
+        .container
+            h3.callbackFormTitle
+                | Вы наш постоянный Клиент?
+                br
+                | Заполните поля и получите подарок!
+            include ../blocks/components/callback-form/callback-form
+    section.cardsWrapper
+        .titleBlock
+            .container
+                h2 Выберите дополнительные опции на детский праздник
+        include ../blocks/components/cards-slider/cards-slider
+    include ../blocks/components/partners/partners
+    include ../blocks/modules/footer/footer
+block scripts
+    script(src="js/main.js")
+    script(src="js/vendor.js")

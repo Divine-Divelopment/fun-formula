@@ -1,0 +1,133 @@
+.homeInfoBlock {
+  display: flex;
+  flex-direction: column;
+}
+.homeInfoBlockOuter {
+  display: grid;
+  grid-template-columns: calc(50% - 40px) 50%;
+  grid-gap: 40px;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.homeInfoPicture {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.homeInfoImageWrapper {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+.homeInfoTextWrapper {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+  grid-row: 1;
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: 0.38px;
+    text-align: left;
+    color: var(--dark-color);
+    margin-bottom: 14px;
+    word-break: break-word;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    span {
+      display: inline-block;
+      margin-bottom: 14px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.moreTextButton {
+  display: none;
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid var(--dark-color);
+  padding: 10px 15px;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: var(--dark-color);
+  img {
+    margin-left: 9px;
+    width: 13px;
+  }
+}
+
+@include lg-block {
+  .homeInfoBlockOuter {
+    grid-template-columns: calc(50% - 15px) 50%;
+    grid-gap: 15px;
+  }
+  .homeInfoImageWrapper {
+    height: 425px;
+  }
+  .homeInfoBlockOuter p {
+    height: 440px;
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 9px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    &.opened {
+      height: auto;
+    }
+    span {
+      margin-bottom: 9px;
+    }
+  }
+  .moreTextButton {
+    display: block;
+  }
+}
+
+@include sm-block {
+  .homeInfoImageWrapper {
+    grid-column: 1;
+    grid-row: 1;
+    height: 200px;
+  }
+  .homeInfoTextWrapper {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .homeInfoBlockOuter p {
+    line-height: 1;
+    height: 152px;
+    overflow: hidden;
+    font-size: 10px;
+    margin-bottom: 7px;
+    span {
+      margin-bottom: 7px;
+    }
+  }
+  .homeInfoBlockOuter {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 8px;
+  }
+  .moreTextButton {
+    font-size: 12px;
+    padding: 8px 9px;
+
+    img {
+      width: 8px;
+      margin-left: 5px;
+    }
+  }
+}

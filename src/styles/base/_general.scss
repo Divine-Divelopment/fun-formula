@@ -1,0 +1,221 @@
+:root {
+  --light-color: #ffffff;
+  --light-shaded-color: #fffefe;
+  --dark-color: #181818;
+  --dark-shaded-color: #3c3c3c;
+  --button-color: #3c3c3c;
+  --button-color-red: #c03c3f;
+  --font-family: "Bebas Neue", sans-serif;
+  --secondary-family: "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: var(--secondary-family);
+  font-weight: 400;
+  color: var(--dark-color);
+  position: relative;
+  min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.titleBlock {
+  width: 100%;
+  font-family: var(--font-family);
+  background: var(--dark-color);
+  h1 {
+    font-size: 30px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: var(--light-color);
+    padding: 15px 0 11px;
+  }
+  h2 {
+    font-size: 26px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: 0.65px;
+    text-align: left;
+    color: var(--light-color);
+    padding: 14px 0 9px;
+  }
+}
+
+p {
+  font-family: var(--secondary-family);
+  margin: 0;
+  padding: 0;
+}
+
+.callbackFormTitle {
+  width: 100%;
+  font-family: var(--secondary-family);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--light-color);
+}
+
+.callbackFormBlock {
+  width: 100%;
+  padding: 55px 0;
+  &.firstBackground {
+    background: url("../img/callback1.webp"), rgba(24, 24, 24, .65);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+  }
+  &.secondBackground {
+    background: url("../img/callback2.webp"), rgba(24, 24, 24, .65);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+  }
+  &.thirdBackground {
+    background: url("../img/callback3.webp"), rgba(24, 24, 24, .65);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+  }
+  &.fourthBackground {
+    background: url("../img/callback4.webp"), rgba(24, 24, 24, .65);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+  }
+}
+.noWebp {
+  .callbackFormBlock {
+    &.firstBackground {
+      background: url("../img/callback1.jpg"), rgba(24, 24, 24, .65);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-blend-mode: multiply;
+    }
+
+    &.secondBackground {
+      background: url("../img/callback2.jpg"), rgba(24, 24, 24, .65);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-blend-mode: multiply;
+    }
+
+    &.thirdBackground {
+      background: url("../img/callback3.jpg"), rgba(24, 24, 24, .65);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-blend-mode: multiply;
+    }
+
+    &.fourthBackground {
+      background: url("../img/callback4.jpg"), rgba(24, 24, 24, .65);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-blend-mode: multiply;
+    }
+  }
+}
+
+.container {
+  @include container();
+  width: 100%;
+}
+
+.cardsWrapper {
+  padding: 15px 0;
+}
+
+@include lg-block {
+  .titleBlock h1 {
+    font-size: 26px;
+  }
+  .titleBlock h2 {
+    font-size: 24px;
+  }
+  .callbackFormBlock {
+    padding: 40px 0;
+  }
+}
+
+@include md-block {
+  .titleBlock h1 {
+    font-size: 20px;
+    padding: 11px 0 7px;
+  }
+  .titleBlock h2 {
+    font-size: 18px;
+    padding: 10px 0 5px;
+  }
+  .callbackFormBlock {
+    padding: 30px 0;
+    &.noWebp {
+      &.firstBackground {
+        background-attachment: scroll;
+      }
+      &.secondBackground {
+        background-attachment: scroll;
+      }
+      &.thirdBackground {
+        background-attachment: scroll;
+      }
+      &.fourthBackground {
+        background-attachment: scroll;
+      }
+    }
+    &.firstBackground {
+      background-attachment: scroll;
+    }
+    &.secondBackground {
+      background-attachment: scroll;
+    }
+    &.thirdBackground {
+      background-attachment: scroll;
+    }
+    &.fourthBackground {
+      background-attachment: scroll;
+    }
+  }
+}
+
+@include sm-block {
+  .titleBlock h1 {
+    font-size: 14px;
+    padding: 7px 0 4px;
+  }
+  .titleBlock h2 {
+    font-size: 12px;
+    padding: 6px 0 2px;
+  }
+  .callbackFormBlock {
+    padding: 20px 0;
+  }
+  .container {
+    padding: 0 10px;
+  }
+}

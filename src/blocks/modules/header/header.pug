@@ -1,0 +1,149 @@
+- var navigation = ['О нас', 'Мальчикам', 'Девочкам', 'Малышам', 'Подросткам', 'Мастер-классы','Шоу-программа','Дополнительно'];
+header.header
+    .container
+        .topHeaderWrapper
+            nav.smallNavigation
+                ul.smallNavigationList
+                    li.smallNavigationItem
+                        a(href="").smallNavigationLink Наши новости
+                    li.smallNavigationItem
+                        a(href="").smallNavigationLink Полезные статьи
+                    li.smallNavigationItem
+                        a(href="").smallNavigationLink Задать вопрос детскому психологу
+            .searchFormWrapper
+                form.searchForm(action="/" method="Post")
+                    fieldset.searchFieldWrapper
+                        input(type="search" inputmode="search" placeholder="Найти")
+                    button.searchButton(type="submit")
+                        img(src="img/svg/search.svg" alt="Search")
+        .mainHeaderWrapper
+            button.mobileMenuButton Открыть меню
+            .logo
+                a.logoLink(href="/")
+                    picture
+                        source(srcset="img/logo.webp" type="image/webp")
+                        source(srcset="img/logo.jpg" type="image/jpeg")
+                        img(src="img/logo.jpg", alt="Логотип")
+            .textHeaderWrapper
+                p.textHeader
+                    | Нет времени звонить?
+                    br
+                    | Оставьте Ваш номер телефона и мы свяжемся
+            .headerButtonWrapper
+                button.headerButton.desktopCallback Заказать звонок
+            .contactInfoWrapper
+                button.mobileSearchButton
+                    img(src="img/svg/search-black.svg" alt="Search")
+                button.cartButton
+                    img(src="img/svg/shopping-cart.svg", alt="Корзина")
+                    p.cartText 1
+                        span &nbsp;товар в корзине
+                button.headerButton.mobileCallback
+                    img(src="img/svg/phone.svg" alt="Заказать звонок")
+                a.phoneLink(href="tel:84951330191") Тел.: 8 (495) 133 01 91
+                a.whatsappLink(href="")
+                    img(src="img/svg/whatsapp-header.svg", alt="Whatsapp")
+                    | 8 (929) 640 53 79
+
+nav.headerNavigation
+    .container
+        ul.headerNavigationList
+            each item in navigation
+                li.headerNavigationItem
+                    a.headerNavigationLink(href="")=item
+                    if (item === "Мальчикам")
+                        div.submenuWrapper
+                            .container.submenuBlockOuter
+                                ul.submenuBlock
+                                    li.submenuItem
+                                        a.submenuLink(href="") Супергерои
+                                        ul.subcategoryList
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Человек Паук и Бэтмен
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Дэдпул
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Черепашки ниньзя
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Железный человек
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Росомаха
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Звёздные войны
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") 5 Элемент
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Трансформеры
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Халк
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Город Героев
+                                    li.submenuItem
+                                        a.submenuLink(href="") Приключения
+                                        ul.subcategoryList
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Индиана Джонс
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Холодное сердце
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Гарри Поттер
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") История игрушек
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Космические приключения
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Смурфики
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Робинзон Крузо
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Мадагаскар
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Ледниковый период
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") РИО
+                                    li.submenuItem
+                                        a.submenuLink(href="") Популярное
+                                        ul.subcategoryList
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Лего
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Панда Кунг-Фу
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Люди в чёрном
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Как приручить дракона
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Волшебный футбол
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Смурфики
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Чокнутый профессор
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Бакуган
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Делай Ноги
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Тачки
+                                    li.submenuItem
+                                        a.submenuLink(href="") Всё остальное
+                                        ul.subcategoryList
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Мистер Квак
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Король Арур
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Властелин колец
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Angry birds
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Лесная братва
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Питер Пэн
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Warcraft
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Самолёты
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Футбольный праздник
+                                            li.subcategoryItem
+                                                a.subcategoryLink(href="") Армейский праздник

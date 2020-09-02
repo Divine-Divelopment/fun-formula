@@ -1,0 +1,36 @@
+.partnersSlider {
+  margin-top: 15px;
+  .swiper-button-prev, .swiper-button-next {
+    --swiper-navigation-size: 20px;
+    z-index: 9;
+    outline: none;
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: var(--dark-color);
+  }
+}
+.partnerSlide {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  picture {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    max-width: 90%;
+    max-height: 150px;
+  }
+}
+
+@include sm-block {
+  .partnersSlider {
+    margin-top: 5px;
+  }
+}

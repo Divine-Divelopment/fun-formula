@@ -1,0 +1,251 @@
+.footer {
+  background: var(--dark-color);
+  padding-bottom: 33px;
+}
+.socialNetworksFooter {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(5, 37px);
+  grid-gap: 40px;
+  padding: 0 15px;
+}
+.socialNetworkLink {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.footerOuter {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 43px 0 35px;
+}
+
+.footerContactInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  a {
+    font-family: var(--secondary-family);
+    font-size: 24px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--light-color);
+    text-decoration: none;
+  }
+}
+
+.whatsappLink {
+  margin-top: 8px;
+  img {
+    width: 25px;
+    height: 25px;
+    margin-right: 23px;
+  }
+}
+
+.copyBlock {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.copyText {
+  font-family: var(--secondary-family);
+  font-size: 15px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--light-color);
+}
+
+.newsFormWrapper {
+  width: 28%;
+  .formTitle {
+    font-family: var(--secondary-family);
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.38px;
+    text-align: left;
+    color: var(--light-color);
+    margin-bottom: 21px;
+  }
+}
+
+.newsFormField {
+  border: none;
+  padding: 0;
+  input {
+    width: 100%;
+    height: 36px;
+    font-family: var(--secondary-family);
+    border: solid 1px var(--light-color);
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--light-color);
+    padding: 0 15px;
+    border-radius: 0;
+    outline: none;
+    &:focus {
+      color: var(--dark-color);
+      background: var(--light-color);
+      &::placeholder {
+        color: var(--dark-color);
+      }
+    }
+    &::placeholder {
+      color: var(--light-color);
+    }
+  }
+}
+
+.newsForm {
+  display: grid;
+  grid-template-columns: 45% 50%;
+  grid-gap: 5%;
+  width: 100%;
+}
+
+.newsFormButton {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  background-color: var(--light-color);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--secondary-family);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--dark-color);
+  border: none;
+  outline: none;
+  border-radius: 0;
+  cursor: pointer;
+  &:hover {
+    background-color: darken(#fff, 10%);
+  }
+}
+
+@include lg-block {
+  .footerContactInfoWrapper a {
+    font-size: 20px;
+  }
+  .socialNetworkLink {
+    width: 24px;
+    height: 24px;
+  }
+  .socialNetworksFooter {
+    grid-template-columns: repeat(5, 24px);
+    grid-gap: 25px;
+  }
+  .newsForm {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .newsFormWrapper .formTitle {
+    font-size: 12px;
+    margin-bottom: 9px;
+  }
+  .footerOuter {
+    padding: 14px 0;
+  }
+  .copyText {
+    max-width: 530px;
+    font-size: 10px;
+    margin: 0 auto;
+    br {
+      display: none;
+    }
+  }
+  .footer {
+    padding-bottom: 10px;
+  }
+}
+
+@include md-block {
+  .footerOuter {
+    flex-direction: column;
+  }
+  .newsForm {
+    grid-template-columns: calc(100% - 140px) 125px;
+    grid-gap: 15px;
+    margin: 0 auto;
+  }
+  .newsFormWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+    width: 100%;
+  }
+  .footerContactInfoWrapper a.whatsappLink {
+    display: none;
+  }
+  .footerContactInfoWrapper {
+    order: 1;
+  }
+  .footerContactInfoWrapper a {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .socialNetworksFooter {
+    order: 3;
+    grid-template-columns: repeat(5, 20px);
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+  .socialNetworkLink {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@include sm-block {
+  .footerContactInfoWrapper a {
+    font-size: 12px;
+  }
+  .socialNetworksFooter {
+    grid-template-columns: repeat(5, 15px);
+    grid-gap: 15px;
+    margin-top: 12px;
+  }
+  .socialNetworkLink {
+    width: 15px;
+    height: 15px;
+  }
+}
