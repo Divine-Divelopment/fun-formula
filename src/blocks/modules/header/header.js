@@ -1,13 +1,11 @@
-import MicroModal from "micromodal";
+document.getElementById("openModal").addEventListener("click", function () {
+    document.getElementById("navigationMenu").classList.add("opened");
+});
 
-document.querySelector(".js-modal-trigger").addEventListener("click", function (event) {
-    event.preventDefault();
-    MicroModal.show("modal-2", {
-        debugMode: true,
-        disableScroll: true,
-        onShow: function (modal) { document.querySelector(".js-body").classList.add(modal.id); },
-        onClose: function (modal) { document.querySelector(".js-body").classList.remove(modal.id); },
-        closeTrigger: "data-custom-close",
-        awaitCloseAnimation: true
-    });
+document.getElementById("closeMenu").addEventListener("click", function () {
+    document.getElementById("navigationMenu").classList.remove("opened");
+});
+
+document.getElementById("toggleSearch").addEventListener("click", function () {
+    document.getElementById("searchBlock").classList.toggle("opened");
 });

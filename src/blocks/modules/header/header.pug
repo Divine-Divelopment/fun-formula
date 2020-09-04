@@ -1,7 +1,7 @@
 - var navigation = ['О нас', 'Мальчикам', 'Девочкам', 'Малышам', 'Подросткам', 'Мастер-классы','Шоу-программа','Дополнительно'];
 header.header
     .container
-        .topHeaderWrapper
+        .topHeaderWrapper#searchBlock
             nav.smallNavigation
                 ul.smallNavigationList
                     li.smallNavigationItem
@@ -17,7 +17,7 @@ header.header
                     button.searchButton(type="submit")
                         img(src="img/svg/search.svg" alt="Search")
         .mainHeaderWrapper
-            button.mobileMenuButton Открыть меню
+            button.mobileMenuButton#openModal Открыть меню
             .logo
                 a.logoLink(href="/")
                     picture
@@ -30,22 +30,25 @@ header.header
                     br
                     | Оставьте Ваш номер телефона и мы свяжемся
             .headerButtonWrapper
-                button.headerButton.desktopCallback Заказать звонок
+                button.headerButton.openModal(data-custom-open="modal-1" role="button")
+                    span Заказать звонок
             .contactInfoWrapper
-                button.mobileSearchButton
+                button.mobileSearchButton#toggleSearch
                     img(src="img/svg/search-black.svg" alt="Search")
                 button.cartButton
                     img(src="img/svg/shopping-cart.svg", alt="Корзина")
                     p.cartText 1
                         span &nbsp;товар в корзине
-                button.headerButton.mobileCallback
+                a.phoneLink.mobileCallback(href="tel:84951330191")
                     img(src="img/svg/phone.svg" alt="Заказать звонок")
-                a.phoneLink(href="tel:84951330191") Тел.: 8 (495) 133 01 91
-                a.whatsappLink(href="")
+                    | Тел.: 8 (495) 133 01 91
+                a.whatsappLink(href="https://wa.me/89296405379")
                     img(src="img/svg/whatsapp-header.svg", alt="Whatsapp")
                     | 8 (929) 640 53 79
 
-nav.headerNavigation
+nav.headerNavigation#navigationMenu
+    button.closeMenuButton#closeMenu
+        img(src="img/svg/close.svg" alt="Закрыть")
     .container
         ul.headerNavigationList
             each item in navigation

@@ -174,7 +174,21 @@ p {
   }
   .callbackFormBlock {
     padding: 30px 0;
-    &.noWebp {
+    &.firstBackground {
+      background-attachment: scroll;
+    }
+    &.secondBackground {
+      background-attachment: scroll;
+    }
+    &.thirdBackground {
+      background-attachment: scroll;
+    }
+    &.fourthBackground {
+      background-attachment: scroll;
+    }
+  }
+  .noWebp {
+    .callbackFormBlock {
       &.firstBackground {
         background-attachment: scroll;
       }
@@ -187,18 +201,6 @@ p {
       &.fourthBackground {
         background-attachment: scroll;
       }
-    }
-    &.firstBackground {
-      background-attachment: scroll;
-    }
-    &.secondBackground {
-      background-attachment: scroll;
-    }
-    &.thirdBackground {
-      background-attachment: scroll;
-    }
-    &.fourthBackground {
-      background-attachment: scroll;
     }
   }
 }

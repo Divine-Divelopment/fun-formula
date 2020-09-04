@@ -1,0 +1,14 @@
+#modal-1.modal.micromodal-slide(aria-hidden="true")
+    div.modal__overlay(tabindex="-1" data-micromodal-close)
+        div.modal__container(role="dialog" aria-modal="true" aria-labelledby="modal-1-title")
+            header.modal__header
+                h2#modal-1-title.modal__title.modalFormTitle Заказать звонок
+                button.modal__close(aria-label="Close modal" data-micromodal-close)
+            main#modal-1-contentModal.modal__content
+                form.modalForm
+                    fieldset.modalFormFieldWrapper
+                        input.modalFormField(type="text" inputmode="text" placeholder="Ваше имя")
+                    fieldset.modalFormFieldWrapper
+                        input.modalFormField(type="phone" inputmode="tel" placeholder="Ваш телефон")
+                    fieldset.modalFormFieldWrapper
+                        button.modalSubmitButton(type="submit") Отправить

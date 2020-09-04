@@ -28,7 +28,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="topHeaderWrapper">
+        <div class="topHeaderWrapper" id="searchBlock">
           <nav class="smallNavigation">
             <ul class="smallNavigationList">
               <li class="smallNavigationItem"><a class="smallNavigationLink" href="">Наши новости</a></li>
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="mainHeaderWrapper">
-          <button class="mobileMenuButton">Открыть меню</button>
+          <button class="mobileMenuButton" id="openModal">Открыть меню</button>
           <div class="logo"><a class="logoLink" href="/">
               <picture>
                 <source srcset="img/logo.webp" type="image/webp">
@@ -56,19 +56,19 @@
             <p class="textHeader">Нет времени звонить?<br>Оставьте Ваш номер телефона и мы свяжемся</p>
           </div>
           <div class="headerButtonWrapper">
-            <button class="headerButton desktopCallback">Заказать звонок</button>
+            <button class="headerButton openModal" data-custom-open="modal-1" role="button"><span>Заказать звонок</span></button>
           </div>
           <div class="contactInfoWrapper">
-            <button class="mobileSearchButton"><img src="img/svg/search-black.svg" alt="Search"></button>
+            <button class="mobileSearchButton" id="toggleSearch"><img src="img/svg/search-black.svg" alt="Search"></button>
             <button class="cartButton"><img src="img/svg/shopping-cart.svg" alt="Корзина">
               <p class="cartText">1<span>&nbsp;товар в корзине</span></p>
-            </button>
-            <button class="headerButton mobileCallback"><img src="img/svg/phone.svg" alt="Заказать звонок"></button><a class="phoneLink" href="tel:84951330191">Тел.: 8 (495) 133 01 91</a><a class="whatsappLink" href=""><img src="img/svg/whatsapp-header.svg" alt="Whatsapp">8 (929) 640 53 79</a>
+            </button><a class="phoneLink mobileCallback" href="tel:84951330191"><img src="img/svg/phone.svg" alt="Заказать звонок">Тел.: 8 (495) 133 01 91</a><a class="whatsappLink" href="https://wa.me/89296405379"><img src="img/svg/whatsapp-header.svg" alt="Whatsapp">8 (929) 640 53 79</a>
           </div>
         </div>
       </div>
     </header>
-    <nav class="headerNavigation">
+    <nav class="headerNavigation" id="navigationMenu">
+      <button class="closeMenuButton" id="closeMenu"><img src="img/svg/close.svg" alt="Закрыть"></button>
       <div class="container">
         <ul class="headerNavigationList">
           <li class="headerNavigationItem"><a class="headerNavigationLink" href="">О нас</a>
@@ -1014,15 +1014,13 @@
               </picture>
             </div>
           </div>
-          <button class="swiper-button-prev partners-swiper-button-prev"></button>
-          <button class="swiper-button-next partners-swiper-button-next"></button>
         </div>
       </div>
     </div>
     <footer class="footer">
       <div class="container">
         <div class="footerOuter">
-          <div class="footerContactInfoWrapper"><a class="phoneLink" href="tel:84951330191">Тел.: 8 (495) 133 01 91</a><a class="whatsappLink" href=""><img src="img/svg/whatsapp-footer.svg" alt="Whatsapp">8 (929) 640 53 79</a></div>
+          <div class="footerContactInfoWrapper"><a class="phoneLink" href="tel:84951330191">Тел.: 8 (495) 133 01 91</a><a class="whatsappLink" href="https://wa.me/89296405379"><img src="img/svg/whatsapp-footer.svg" alt="Whatsapp">8 (929) 640 53 79</a></div>
           <ul class="socialNetworksFooter">
             <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/vk.svg" alt="Вконтакте"></a></li>
             <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/facebook.svg" alt="Facebook"></a></li>
@@ -1045,6 +1043,29 @@
         </div>
       </div>
     </footer>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title modalFormTitle" id="modal-1-title">Заказать звонок</h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-contentModal">
+            <form class="modalForm">
+              <fieldset class="modalFormFieldWrapper">
+                <input class="modalFormField" type="text" inputmode="text" placeholder="Ваше имя">
+              </fieldset>
+              <fieldset class="modalFormFieldWrapper">
+                <input class="modalFormField" type="phone" inputmode="tel" placeholder="Ваш телефон">
+              </fieldset>
+              <fieldset class="modalFormFieldWrapper">
+                <button class="modalSubmitButton" type="submit">Отправить</button>
+              </fieldset>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
     <script src="js/main.min.js"></script>
     <script src="js/vendor.min.js"></script>
   </body>

@@ -12,6 +12,21 @@
   font-size: 0;
 }
 
+.closeMenuButton {
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: 14px;
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  img {
+    display: block;
+  }
+}
+
 .mobileSearchButton {
   display: none;
   margin: 0;
@@ -236,6 +251,12 @@
     text-align: left;
     color: var(--dark-color);
     text-decoration: none;
+    &.phoneLink {
+      img {
+        display: none;
+        max-height: 26px;
+      }
+    }
   }
 }
 
@@ -396,14 +417,36 @@
   .headerNavigationItem {
     padding: 0 2px;
   }
+  .submenuWrapper {
+    display: none;
+  }
 }
 
 @include md-block {
+  .header {
+    position: sticky;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background: var(--light-color);
+    box-shadow: 0 0 3px 0 rgba(24, 24, 24, 0.5);
+    padding: 3px 0;
+  }
   .textHeader {
     display: none;
   }
-  .headerButton.desktopCallback {
-    display: none;
+  .headerButton {
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    overflow: visible;
+    border-radius: 50px;
+    font-size: 10px;
+    padding: 0;
+    background: rgba(192, 60, 63, 0.8);
+    box-shadow: rgba(192, 60, 63, 0.5) 0 4px 24px;
   }
   .cartText span {
     display: none;
@@ -411,9 +454,6 @@
   .cartButton {
     position: relative;
     margin: 0;
-  }
-  .contactInfoWrapper a.phoneLink {
-    display: none;
   }
   .cartText {
     display: flex;
@@ -435,13 +475,15 @@
     font-size: 0;
     margin: 0 0 0 15px;
   }
-  .headerButton.mobileCallback {
+  .contactInfoWrapper a.mobileCallback {
     display: flex;
     border: none;
     padding: 0;
     background: transparent;
     margin-left: 19px;
+    font-size: 0;
     img {
+      display: block;
       height: 26px;
     }
   }
@@ -460,19 +502,42 @@
     height: 27px;
   }
   .topHeaderWrapper {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding: 0 10px;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    &.opened {
+      pointer-events: visible;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .searchFormWrapper {
+    width: 100%;
+  }
+  .searchForm .searchFieldWrapper input {
+    box-shadow: 0 0 3px 0 rgba(60, 60, 60, 0.5);
+    background-color: var(--light-color);
+    height: 25px;
+    font-size: 12px;
+  }
+  .searchForm .searchButton {
+    height: 25px;
+    img {
+      max-width: 18px;
+      max-height: 18px;
+    }
   }
   .mainHeaderWrapper {
     padding: 0;
   }
   .whatsappLink img {
     margin-right: 0;
-  }
-  .header {
-    padding: 3px 0;
-  }
-  .headerNavigation {
-    display: none;
   }
   .mobileSearchButton {
     display: block;
@@ -481,14 +546,57 @@
   .mainSliderBlock {
     padding-top: 0;
   }
-  .submenuWrapper {
-    display: none;
-  }
   .mobileMenuButton {
     display: block;
+  }
+  .headerNavigation {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    width: auto;
+    background: var(--light-color);
+    box-shadow: 0 0 3px 0 rgba(24, 24, 24, 0.5);
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+    &.opened {
+      pointer-events: visible;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .headerNavigationList {
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 18px;
+    text-align: left;
+  }
+  .headerNavigationLink {
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--dark-color);
+    padding: 0;
+    font-weight: 700;
+    font-family: var(--secondary-family);
+  }
+  .headerNavigationItem {
+    border: none;
+    padding: 0;
+  }
+  .smallNavigation {
+    display: none;
   }
 }
 
 @include sm-block {
-
+  .headerButton {
+    right: 10px;
+  }
 }
