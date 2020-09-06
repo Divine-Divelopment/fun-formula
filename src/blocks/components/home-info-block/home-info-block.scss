@@ -1,6 +1,9 @@
 .homeInfoBlock {
   display: flex;
   flex-direction: column;
+  &.afterHeader {
+    margin-top: 15px;
+  }
 }
 .homeInfoBlockOuter {
   display: grid;
@@ -13,8 +16,7 @@
 .homeInfoPicture {
   img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
   }
 }
 .homeInfoImageWrapper {
@@ -26,7 +28,7 @@
   flex-direction: column;
   grid-column: 1/2;
   grid-row: 1;
-  p {
+  .textWrapper {
     font-size: 15px;
     font-weight: 400;
     font-stretch: normal;
@@ -40,7 +42,7 @@
     &:last-child {
       margin-bottom: 0;
     }
-    span {
+    p {
       display: inline-block;
       margin-bottom: 14px;
       &:last-child {
@@ -64,9 +66,23 @@
   line-height: 1;
   letter-spacing: normal;
   color: var(--dark-color);
-  img {
+  &:after {
+    float: right;
+    content: "";
+    background: url("../img/svg/arrow.svg");
+    display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-left: 9px;
-    width: 13px;
+    width: 10px;
+    height: 18px;
+    transform: rotateY(0);
+  }
+  &.opened {
+    &:after {
+      transform: rotateY(180deg);
+    }
   }
 }
 
@@ -77,23 +93,51 @@
   }
   .homeInfoImageWrapper {
     height: 425px;
+    &.smallImage {
+      height: 240px;
+      img {
+        object-position: top center;
+      }
+    }
   }
-  .homeInfoBlockOuter p {
-    height: 440px;
+  .homeInfoBlockOuter .textWrapper {
+    height: 429px;
     overflow: hidden;
     font-size: 14px;
     margin-bottom: 9px;
     line-height: 1.2;
     letter-spacing: 0;
+    &.miniText {
+      height: 240px;
+      &.opened {
+        height: auto;
+      }
+    }
+    &.smallText {
+      height: 400px;
+      &.opened {
+        height: auto;
+      }
+    }
     &.opened {
       height: auto;
     }
-    span {
+    p {
       margin-bottom: 9px;
     }
   }
   .moreTextButton {
     display: block;
+    &.mobileOnly {
+      display: none;
+    }
+  }
+  .homeInfoPicture img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .homeInfoPicture.notFull img {
+    height: auto;
   }
 }
 
@@ -107,13 +151,25 @@
     grid-column: 1;
     grid-row: 2;
   }
-  .homeInfoBlockOuter p {
+  .homeInfoBlockOuter .textWrapper {
     line-height: 1;
     height: 152px;
     overflow: hidden;
     font-size: 10px;
     margin-bottom: 7px;
-    span {
+    &.miniText {
+      height: 194px;
+      &.opened {
+        height: auto;
+      }
+    }
+    &.smallText {
+      height: 158px;
+      &.opened {
+        height: auto;
+      }
+    }
+    p {
       margin-bottom: 7px;
     }
   }
@@ -124,10 +180,14 @@
   .moreTextButton {
     font-size: 12px;
     padding: 8px 9px;
-
-    img {
-      width: 8px;
-      margin-left: 5px;
+    &.mobileOnly {
+      display: block;
     }
+    &:after {
+      height: 12px;
+    }
+  }
+  .homeInfoPicture.notFull img {
+    height: 100%;
   }
 }

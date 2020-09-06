@@ -1,0 +1,20 @@
+extends ../layouts/default
+
+block variables
+    - const title = "Мастер-классы для детей";
+
+block content
+    include ../../blocks/modules/header/header
+    include ../../blocks/components/article-info/article-info
+    include ../../blocks/components/comments/comments
+    section.articlesBlock
+        .titleBlock
+            .container
+                h2 Вам понравилось? читайте ещё
+        .container
+            include ../../blocks/components/articles/articles
+    include ../../blocks/modules/footer/footer
+
+block scripts
+    script(src="js/article-page.js")
+    script(src="js/vendor.js")

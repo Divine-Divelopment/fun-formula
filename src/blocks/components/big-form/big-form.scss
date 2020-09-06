@@ -1,0 +1,175 @@
+.callbackFormBlockOuter {
+  width: 100%;
+  max-width: 1040px;
+  margin: 30px auto 0;
+}
+
+.callBackForm {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  row-gap: 25px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.formFieldWrapper {
+  margin: 0;
+  border: none;
+  padding: 0;
+  &.fullField {
+    grid-column: 1/5;
+    grid-row: 2;
+  }
+}
+.formField {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  border: solid 1px var(--light-color);
+  background-color: transparent;
+  font-family: var(--secondary-family);
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--light-color);
+  padding: 0 9px;
+  outline: none;
+
+  &:focus {
+    background: var(--light-color);
+    color: var(--dark-color);
+    &::placeholder {
+      color: var(--dark-color);
+    }
+  }
+  &::placeholder {
+    color: var(--light-color);
+  }
+}
+.formTextarea {
+  width: 100%;
+  height: 104px;
+  resize: none;
+  margin: 0;
+  border: solid 1px var(--light-color);
+  background-color: transparent;
+  font-family: var(--secondary-family);
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--light-color);
+  padding: 9px;
+  outline: none;
+
+  &:focus {
+    background: var(--light-color);
+    color: var(--dark-color);
+    &::placeholder {
+      color: var(--dark-color);
+    }
+  }
+  &::placeholder {
+    color: var(--light-color);
+  }
+}
+.submitButton {
+  width: 100%;
+  height: 50px;
+  background: var(--button-color-red);
+  font-family: var(--secondary-family);
+  border: none;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--light-color);
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background: darken(#c03c3f, 10%);
+  }
+}
+
+@include lg-block {
+  .callBackForm {
+    grid-gap: 20px;
+  }
+  .formField {
+    height: 36px;
+    font-size: 14px;
+  }
+  .submitButton {
+    height: 36px;
+    font-size: 16px;
+  }
+  .callbackFormTitle {
+    font-size: 18px;
+  }
+}
+
+@include md-block {
+  .callbackFormBlockOuter {
+    margin-top: 20px;
+  }
+  .callBackForm {
+    grid-gap: 15px;
+  }
+  .formField, .formTextarea {
+    font-size: 12px;
+  }
+  .submitButton {
+    font-size: 16px;
+  }
+}
+
+@include sm-block {
+  .callbackFormTitle {
+    font-size: 12px;
+  }
+  .callbackFormBlockOuter {
+    margin-top: 15px;
+  }
+  .formFieldWrapper {
+    &.fullField {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  }
+  .callBackForm {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 12px;
+    max-width: 65%;
+    margin: 0 auto;
+  }
+  .formField {
+    height: 29px;
+    font-size: 10px;
+    border-radius: 2px;
+    padding: 0 20px;
+  }
+  .formTextarea {
+    font-size: 10px;
+    border-radius: 2px;
+    padding: 10px 20px;
+  }
+  .submitButton {
+    height: 29px;
+    font-size: 14px;
+    border-radius: 2px;
+  }
+}

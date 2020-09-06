@@ -1,0 +1,66 @@
+.commentsSliderBlock {
+  padding: 15px 0;
+}
+
+.commentWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.personBlock {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.personImage {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 80px;
+  margin-right: 14px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.personName {
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.04;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: var(--dark-color);
+}
+
+.personQuote {
+  font-size: 15px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.38px;
+  text-align: left;
+  color: var(--dark-color);
+}
+
+@include lg-block {
+  .personQuote {
+    font-size: 10px;
+  }
+  .personName {
+    font-size: 14px;
+  }
+  .personImage {
+    width: 48px;
+    height: 48px;
+    margin-right: 9px;
+  }
+}

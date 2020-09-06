@@ -1,0 +1,36 @@
+extends ../layouts/default
+
+block variables
+    - const title = "Мастер-классы для детей";
+
+block content
+    include ../../blocks/modules/header/header
+    include ../../blocks/components/article-info-block/article-info-block
+    section.callbackFormBlock.sixthBackground.mobileLast
+        .container
+            h3.callbackFormTitle Предложите оригинальную тему для статьи
+            include ../../blocks/components/big-form/big-form
+    section.articlesBlock
+        .titleBlock
+            .container
+                h2 ЧИТАЙТЕ НОВЫЕ СТАТЬИ НА ИНТЕРЕСНЫЕ ВАМ ТЕМЫ
+        .textBlockOuter
+            .container
+                p Компания «FUN-FORMULA» представляет самые популярные статьи для родителей и детей. Каждая статья проверена на опыте, написана от всего сердца, поэтому обязательно будет полезной и позволит Вам:
+                ul
+                    li Принять участие в организации детского дня рождения всей семьей
+                    li Узнать новые игры для совместного досуга
+                    li Удивить своего ребёнка в День Рождения
+                    li Узнать секреты организаторской деятельности
+                    li Найти вкусные рецепты для праздничного стола
+                p Словом, в этих статьях Вы найдете всё, что может быть новым, волнующим и интересным для родителей и детей!
+
+        .container
+            include ../../blocks/components/articles/articles
+
+
+    include ../../blocks/modules/footer/footer
+
+block scripts
+    script(src="js/articles-page.js")
+    script(src="js/vendor.js")

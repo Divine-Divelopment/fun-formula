@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Мастер-классы для детей</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="topHeaderWrapper" id="searchBlock">
+          <nav class="smallNavigation">
+            <ul class="smallNavigationList">
+              <li class="smallNavigationItem"><a class="smallNavigationLink" href="">Наши новости</a></li>
+              <li class="smallNavigationItem"><a class="smallNavigationLink" href="">Полезные статьи</a></li>
+              <li class="smallNavigationItem"><a class="smallNavigationLink" href="">Задать вопрос детскому психологу</a></li>
+            </ul>
+          </nav>
+          <div class="searchFormWrapper">
+            <form class="searchForm" action="/" method="Post">
+              <fieldset class="searchFieldWrapper">
+                <input type="search" inputmode="search" placeholder="Найти">
+              </fieldset>
+              <button class="searchButton" type="submit"><img src="img/svg/search.svg" alt="Search"></button>
+            </form>
+          </div>
+        </div>
+        <div class="mainHeaderWrapper">
+          <button class="mobileMenuButton" id="openModal">Открыть меню</button>
+          <div class="logo"><a class="logoLink" href="/">
+              <picture>
+                <source srcset="img/logo.webp" type="image/webp">
+                <source srcset="img/logo.jpg" type="image/jpeg"><img src="img/logo.jpg" alt="Логотип">
+              </picture></a></div>
+          <div class="textHeaderWrapper">
+            <p class="textHeader">Нет времени звонить?<br>Оставьте Ваш номер телефона и мы свяжемся</p>
+          </div>
+          <div class="headerButtonWrapper">
+            <button class="headerButton openModal" data-custom-open="modal-1" role="button"><span>Заказать звонок</span></button>
+          </div>
+          <div class="contactInfoWrapper">
+            <button class="mobileSearchButton" id="toggleSearch"><img src="img/svg/search-black.svg" alt="Search"></button>
+            <button class="cartButton"><img src="img/svg/shopping-cart.svg" alt="Корзина">
+              <p class="cartText">1<span>&nbsp;товар в корзине</span></p>
+            </button><a class="phoneLink mobileCallback" href="tel:84951330191"><img src="img/svg/phone.svg" alt="Заказать звонок">Тел.: 8 (495) 133 01 91</a><a class="whatsappLink" href="https://wa.me/89296405379"><img src="img/svg/whatsapp-header.svg" alt="Whatsapp">8 (929) 640 53 79</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="headerNavigation" id="navigationMenu">
+      <button class="closeMenuButton" id="closeMenu"><img src="img/svg/close.svg" alt="Закрыть"></button>
+      <div class="container">
+        <ul class="headerNavigationList">
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">О нас</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Мальчикам</a>
+            <div class="submenuWrapper">
+              <div class="container submenuBlockOuter">
+                <ul class="submenuBlock">
+                  <li class="submenuItem"><a class="submenuLink" href="">Супергерои</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Человек Паук и Бэтмен</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Дэдпул</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Черепашки ниньзя</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Железный человек</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Росомаха</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Звёздные войны</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">5 Элемент</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Трансформеры</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Халк</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Город Героев</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenuItem"><a class="submenuLink" href="">Приключения</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Индиана Джонс</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Холодное сердце</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Гарри Поттер</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">История игрушек</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Космические приключения</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Смурфики</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Робинзон Крузо</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Мадагаскар</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Ледниковый период</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">РИО</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenuItem"><a class="submenuLink" href="">Популярное</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Лего</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Панда Кунг-Фу</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Люди в чёрном</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Как приручить дракона</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Волшебный футбол</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Смурфики</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Чокнутый профессор</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Бакуган</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Делай Ноги</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Тачки</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenuItem"><a class="submenuLink" href="">Всё остальное</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Мистер Квак</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Король Арур</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Властелин колец</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Angry birds</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Лесная братва</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Питер Пэн</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Warcraft</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Самолёты</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Футбольный праздник</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Армейский праздник</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Девочкам</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Малышам</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Подросткам</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Мастер-классы</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Шоу-программа</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Дополнительно</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="homeInfoBlock afterHeader">
+      <div class="titleBlock">
+        <div class="container">
+          <h1>ПОЛЕЗНЫЕ СТАТЬИ ДЛЯ РОДИТЕЛЕЙ И ДЕТЕЙ</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="homeInfoBlockOuter">
+          <div class="homeInfoImageWrapper smallImage">
+            <picture class="homeInfoPicture">
+              <source srcset="img/articles-info-image.webp" type="image/webp">
+              <source srcset="img/articles-info-image.jpg" type="image/jpeg"><img src="img/articles-info-image.jpg" alt="Мастер-классы для детей">
+            </picture>
+          </div>
+          <div class="homeInfoTextWrapper">
+            <div class="textWrapper miniText">
+              <p>Стремитесь быть в тренде? Любите творчество и оригинальные идеи?<br/>Мы тоже!</p>
+              <p>Компания «FUN-FORMULA» открывает новую рубрику – для родителей, которые черпают вдохновение в воспитании детей, и сами вдохновленно дарят детям самое лучшее.</p>
+              <p>Специально для Вас каждую неделю мы готовим актуальный материал. На этих страницах Вы найдете идеи на тему творчества, организации и проведения детского праздника самостоятельно, статьи о детской возрастной психологии, статьи о воспитании и развитии детей, а еще – оригинальные идеи «позитивного родительства», способные раскрыть таланты и творческий потенциал Вашего ребенка.</p>
+              <p>Наша цель – помогать Вам строить планы и воплощать их в жизнь, находить общий язык и жить в гармонии с близкими, а еще – поддерживать Вас в те моменты, когда нужен совет или просто свежая идея для собственного или семейного досуга. Даже если Вам захочется провести время весело – здесь Вы найдете забавные интервью с любимыми героями детских праздников, статьи о необычных родителях и игры для всей семьи.</p>
+              <p>Мы рады быть Вам полезными. А если у Вас есть необычная тема для очередной статьи – предложите ее нам и получите приятные бонусы при заказе детского праздника для Вашего ребенка. Одним словом, будьте в тренде вместе с нами!</p>
+            </div>
+            <button class="moreTextButton">Читать далее</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="callbackFormBlock sixthBackground mobileLast">
+      <div class="container">
+        <h3 class="callbackFormTitle">Предложите оригинальную тему для статьи</h3>
+        <div class="callbackFormBlockOuter">
+          <form class="callBackForm">
+            <fieldset class="formFieldWrapper">
+              <input class="formField" type="text" inputmode="text" placeholder="Ваше имя">
+            </fieldset>
+            <fieldset class="formFieldWrapper">
+              <input class="formField" type="phone" inputmode="tel" placeholder="Ваш телефон">
+            </fieldset>
+            <fieldset class="formFieldWrapper">
+              <input class="formField" type="email" inputmode="email" placeholder="Ваш e-mail">
+            </fieldset>
+            <fieldset class="formFieldWrapper fullField">
+              <textarea class="formTextarea" placeholder="Опишите тему"></textarea>
+            </fieldset>
+            <fieldset class="formFieldWrapper">
+              <button class="submitButton" type="submit">Предложить</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="articlesBlock">
+      <div class="titleBlock">
+        <div class="container">
+          <h2>ЧИТАЙТЕ НОВЫЕ СТАТЬИ НА ИНТЕРЕСНЫЕ ВАМ ТЕМЫ</h2>
+        </div>
+      </div>
+      <div class="textBlockOuter">
+        <div class="container">
+          <p>Компания «FUN-FORMULA» представляет самые популярные статьи для родителей и детей. Каждая статья проверена на опыте, написана от всего сердца, поэтому обязательно будет полезной и позволит Вам:</p>
+          <ul>
+            <li>Принять участие в организации детского дня рождения всей семьей</li>
+            <li>Узнать новые игры для совместного досуга</li>
+            <li>Удивить своего ребёнка в День Рождения</li>
+            <li>Узнать секреты организаторской деятельности</li>
+            <li>Найти вкусные рецепты для праздничного стола</li>
+          </ul>
+          <p>Словом, в этих статьях Вы найдете всё, что может быть новым, волнующим и интересным для родителей и детей!</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="articlesBlockList">
+          <article class="articleBlock">
+            <div class="articleImageWrapper">
+              <picture>
+                <source srcset="img/articles1.webp" type="image/webp">
+                <source srcset="img/articles1.jpg" type="image/jpeg"><img class="articleImage" src="img/articles1.jpg" alt="Рецепт сахарного печенья в цветной глазури ко Дню Рождения">
+              </picture>
+              <div class="articleButtonsBlock">
+                <button class="articleButton messageButton"></button>
+                <button class="articleButton likeButton"></button>
+                <button class="articleButton smileButton"></button>
+              </div><a class="hashTag" href="/">ИДЕИ К ПРАЗДНИКУ</a>
+            </div><a class="articleName" href="/">Рецепт сахарного печенья в цветной глазури ко Дню Рождения</a>
+          </article>
+          <article class="articleBlock">
+            <div class="articleImageWrapper">
+              <picture>
+                <source srcset="img/articles2.webp" type="image/webp">
+                <source srcset="img/articles2.jpg" type="image/jpeg"><img class="articleImage" src="img/articles2.jpg" alt="Рецепт сахарного печенья в цветной глазури ко Дню Рождения">
+              </picture>
+              <div class="articleButtonsBlock">
+                <button class="articleButton messageButton"></button>
+                <button class="articleButton likeButton"></button>
+                <button class="articleButton smileButton"></button>
+              </div><a class="hashTag" href="/">ИДЕИ К ПРАЗДНИКУ</a>
+            </div><a class="articleName" href="/">Рецепт сахарного печенья в цветной глазури ко Дню Рождения</a>
+          </article>
+          <article class="articleBlock">
+            <div class="articleImageWrapper">
+              <picture>
+                <source srcset="img/articles3.webp" type="image/webp">
+                <source srcset="img/articles3.jpg" type="image/jpeg"><img class="articleImage" src="img/articles3.jpg" alt="Рецепт сахарного печенья в цветной глазури ко Дню Рождения">
+              </picture>
+              <div class="articleButtonsBlock">
+                <button class="articleButton messageButton"></button>
+                <button class="articleButton likeButton"></button>
+                <button class="articleButton smileButton"></button>
+              </div><a class="hashTag" href="/">ИДЕИ К ПРАЗДНИКУ</a>
+            </div><a class="articleName" href="/">Рецепт сахарного печенья в цветной глазури ко Дню Рождения</a>
+          </article>
+          <article class="articleBlock">
+            <div class="articleImageWrapper">
+              <picture>
+                <source srcset="img/articles4.webp" type="image/webp">
+                <source srcset="img/articles4.jpg" type="image/jpeg"><img class="articleImage" src="img/articles4.jpg" alt="Рецепт сахарного печенья в цветной глазури ко Дню Рождения">
+              </picture>
+              <div class="articleButtonsBlock">
+                <button class="articleButton messageButton"></button>
+                <button class="articleButton likeButton"></button>
+                <button class="articleButton smileButton"></button>
+              </div><a class="hashTag" href="/">ИДЕИ К ПРАЗДНИКУ</a>
+            </div><a class="articleName" href="/">Рецепт сахарного печенья в цветной глазури ко Дню Рождения</a>
+          </article>
+          <article class="articleBlock fullArticle">
+            <div class="articleImageWrapper">
+              <picture>
+                <source srcset="img/articles5.webp" type="image/webp">
+                <source srcset="img/articles5.jpg" type="image/jpeg"><img class="articleImage" src="img/articles5.jpg" alt="Рецепт сахарного печенья в цветной глазури ко Дню Рождения">
+              </picture>
+              <div class="articleButtonsBlock">
+                <button class="articleButton messageButton"></button>
+                <button class="articleButton likeButton"></button>
+                <button class="articleButton smileButton"></button>
+              </div><a class="hashTag" href="/">ИДЕИ К ПРАЗДНИКУ</a>
+            </div><a class="articleName" href="/">Рецепт сахарного печенья в цветной глазури ко Дню Рождения</a>
+          </article>
+          <article class="articleBlock fullArticle">
+            <div class="articleImageWrapper">
+              <picture>
+                <source srcset="img/articles6.webp" type="image/webp">
+                <source srcset="img/articles6.jpg" type="image/jpeg"><img class="articleImage" src="img/articles6.jpg" alt="Рецепт сахарного печенья в цветной глазури ко Дню Рождения">
+              </picture>
+              <div class="articleButtonsBlock">
+                <button class="articleButton messageButton"></button>
+                <button class="articleButton likeButton"></button>
+                <button class="articleButton smileButton"></button>
+              </div><a class="hashTag" href="/">ИДЕИ К ПРАЗДНИКУ</a>
+            </div><a class="articleName" href="/">Рецепт сахарного печенья в цветной глазури ко Дню Рождения</a>
+          </article>
+          <article class="articleBlock">
+            <div class="articleImageWrapper">
+              <picture>
+                <source srcset="img/articles7.webp" type="image/webp">
+                <source srcset="img/articles7.jpg" type="image/jpeg"><img class="articleImage" src="img/articles7.jpg" alt="Рецепт сахарного печенья в цветной глазури ко Дню Рождения">
+              </picture>
+              <div class="articleButtonsBlock">
+                <button class="articleButton messageButton"></button>
+                <button class="articleButton likeButton"></button>
+                <button class="articleButton smileButton"></button>
+              </div><a class="hashTag" href="/">ИДЕИ К ПРАЗДНИКУ</a>
+            </div><a class="articleName" href="/">Рецепт сахарного печенья в цветной глазури ко Дню Рождения</a>
+          </article>
+          <article class="articleBlock">
+            <div class="articleImageWrapper">
+              <picture>
+                <source srcset="img/articles8.webp" type="image/webp">
+                <source srcset="img/articles8.jpg" type="image/jpeg"><img class="articleImage" src="img/articles8.jpg" alt="Рецепт сахарного печенья в цветной глазури ко Дню Рождения">
+              </picture>
+              <div class="articleButtonsBlock">
+                <button class="articleButton messageButton"></button>
+                <button class="articleButton likeButton"></button>
+                <button class="articleButton smileButton"></button>
+              </div><a class="hashTag" href="/">ИДЕИ К ПРАЗДНИКУ</a>
+            </div><a class="articleName" href="/">Рецепт сахарного печенья в цветной глазури ко Дню Рождения</a>
+          </article>
+          <article class="articleBlock">
+            <div class="articleImageWrapper">
+              <picture>
+                <source srcset="img/articles9.webp" type="image/webp">
+                <source srcset="img/articles9.jpg" type="image/jpeg"><img class="articleImage" src="img/articles9.jpg" alt="Рецепт сахарного печенья в цветной глазури ко Дню Рождения">
+              </picture>
+              <div class="articleButtonsBlock">
+                <button class="articleButton messageButton"></button>
+                <button class="articleButton likeButton"></button>
+                <button class="articleButton smileButton"></button>
+              </div><a class="hashTag" href="/">ИДЕИ К ПРАЗДНИКУ</a>
+            </div><a class="articleName" href="/">Рецепт сахарного печенья в цветной глазури ко Дню Рождения</a>
+          </article>
+          <article class="articleBlock">
+            <div class="articleImageWrapper">
+              <picture>
+                <source srcset="img/articles10.webp" type="image/webp">
+                <source srcset="img/articles10.jpg" type="image/jpeg"><img class="articleImage" src="img/articles10.jpg" alt="Рецепт сахарного печенья в цветной глазури ко Дню Рождения">
+              </picture>
+              <div class="articleButtonsBlock">
+                <button class="articleButton messageButton"></button>
+                <button class="articleButton likeButton"></button>
+                <button class="articleButton smileButton"></button>
+              </div><a class="hashTag" href="/">ИДЕИ К ПРАЗДНИКУ</a>
+            </div><a class="articleName" href="/">Рецепт сахарного печенья в цветной глазури ко Дню Рождения</a>
+          </article>
+        </div>
+        <div class="moreButtonBlock">
+          <button class="moreArticles">Показать ещё</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footerOuter">
+          <div class="footerContactInfoWrapper"><a class="phoneLink" href="tel:84951330191">Тел.: 8 (495) 133 01 91</a><a class="whatsappLink" href="https://wa.me/89296405379"><img src="img/svg/whatsapp-footer.svg" alt="Whatsapp">8 (929) 640 53 79</a></div>
+          <ul class="socialNetworksFooter">
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/vk.svg" alt="Вконтакте"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/facebook.svg" alt="Facebook"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/whatsapp.svg" alt="Whatsapp"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/twitter.svg" alt="Twitter"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
+          </ul>
+          <div class="newsFormWrapper">
+            <p class="formTitle">Подпешитесь на наши новости</p>
+            <form class="newsForm">
+              <fieldset class="newsFormField">
+                <input type="email" inputmode="email" placeholder="E-mail">
+              </fieldset>
+              <button class="newsFormButton" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyBlock">
+          <p class="copyText">Все права на программы защищены. Все фотографии на сайте являются собственностью компании «Fun-Formula» и не могут использоваться без согласия правообладателя.<br>© 2014 «Fun-Formula»</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/articles-page.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+  </body>
+</html>

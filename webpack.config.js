@@ -3,6 +3,9 @@ const path = require("path");
 module.exports = {
     entry: {
         main: "./src/js/index.js",
+        "service-page": "./src/js/pages/service-page.js",
+        "article-page": "./src/js/pages/article-page.js",
+        "articles-page": "./src/js/pages/articles-page.js"
     },
 
     output: {
