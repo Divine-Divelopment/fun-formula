@@ -1,0 +1,25 @@
+extends ../layouts/default
+
+block variables
+    - const title = "Мастер-классы для детей";
+
+block content
+    include ../../blocks/modules/header/header
+    include ../../blocks/components/big-banner/big-banner
+    include ../../blocks/components/text-block/text-block
+    include ../../blocks/components/tabs-block/tabs-block
+    section.callbackFormBlock.firstBackground
+        .container
+            h3.callbackFormTitle Забронируйте сценарий на нужную дату
+            include ../../blocks/components/callback-form/callback-form
+    include ../../blocks/components/big-gallery/big-gallery
+    section.cardsWrapper
+        .titleBlock
+            .container
+                h2 Также рекомендуем
+    include ../../blocks/components/small-slider/small-slider
+    include ../../blocks/modules/footer/footer
+    include ../../blocks/components/modals/modals
+block scripts
+    script(src="js/product-page.js")
+    script(src="js/vendor.js")

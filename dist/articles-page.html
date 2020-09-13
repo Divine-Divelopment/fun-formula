@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
     <header class="header">
@@ -386,7 +386,30 @@
         </div>
       </div>
     </footer>
-    <script src="js/articles-page.min.js"></script>
-    <script src="js/vendor.min.js"></script>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title modalFormTitle" id="modal-1-title">Заказать звонок</h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-contentModal">
+            <form class="modalForm">
+              <fieldset class="modalFormFieldWrapper">
+                <input class="modalFormField" type="text" inputmode="text" placeholder="Ваше имя">
+              </fieldset>
+              <fieldset class="modalFormFieldWrapper">
+                <input class="modalFormField" type="phone" inputmode="tel" placeholder="Ваш телефон">
+              </fieldset>
+              <fieldset class="modalFormFieldWrapper">
+                <button class="modalSubmitButton" type="submit">Отправить</button>
+              </fieldset>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="js/articles-page.js"></script>
+    <script src="js/vendor.js"></script>
   </body>
 </html>

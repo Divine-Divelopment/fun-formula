@@ -1,0 +1,26 @@
+.bigBanner
+    .bigBannerImage
+        picture
+            source(srcset="img/banner-image.webp" type="image/webp")
+            source(srcset="img/banner-image.jpg" type="image/jpeg")
+            img(src="img/banner-image.jpg", alt="ХОЛОДНОЕ СЕРДЦЕ «ЛЕДЯНОЙ МОНСТР И ДРУЖБА СЕСТёР»")
+    .container
+        .bigBannerOuter
+            .bigBannerInfo
+                p.minimumPrice от 4500 &#8381;/час
+                h1.productTitle ХОЛОДНОЕ СЕРДЦЕ
+                    br/
+                    |«ЛЕДЯНОЙ МОНСТР И ДРУЖБА СЕСТёР»
+                h3.productSubtitle Герои детского праздника: смелая Анна, таинственная Эльза, Кристофф, Ханс, Олаф, Свен
+                p.productDescription Мы приглашаем детей оказаться в королевстве Эрендел и окунуться в невероятные приключение вместе с любимейшими героинями потрясающей истории...
+                a.watchVideo(data-fslightbox data-type="youtube" href="https://www.youtube.com/watch?v=yRbM2NIpZHY") Смотреть видео
+                    span.iconPlay
+        .productsItems
+            a.prevProduct(href="/")
+                div.textButton
+                    p.productName Гарри Поттер
+                    span.staticText предыдущий
+            a.nextProduct(href="/")
+                div.textButton
+                    p.productName Как приручить дракона
+                    span.staticText следующий

@@ -66,6 +66,10 @@
   line-height: 1;
   letter-spacing: normal;
   color: var(--dark-color);
+  cursor: pointer;
+  &.desktopButton {
+    display: flex;
+  }
   &:after {
     float: right;
     content: "";

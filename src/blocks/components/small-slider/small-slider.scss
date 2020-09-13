@@ -1,0 +1,25 @@
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  display: none;
+}
+.smallCardsSlide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.smallCardsBlock {
+  margin-bottom: 15px;
+}
+
+
+@include md-block {
+  .smallCardsBlock {
+    margin-bottom: 10px;
+  }
+}
+
+@include sm-block {
+  .smallCardsBlock {
+    margin-bottom: 5px;
+  }
+}

@@ -153,8 +153,13 @@
 }
 
 @include lg-block {
+  .articleInfoImageWrapper, .articleInfoTextWrapper {
+    grid-column: auto;
+    grid-row: auto;
+    height: auto;
+  }
   .articleInfoBlockOuter {
-    grid-template-columns: calc(50% - 15px) 50%;
+    grid-template-columns: 1fr;
     grid-gap: 15px;
   }
   .moreTextButton {
@@ -179,7 +184,6 @@
 
 @include md-block {
   .otherInfo {
-    justify-content: flex-start;
     .hashTagOnPage {
       font-size: 15px;
       margin-top: 10px;
@@ -196,18 +200,6 @@
 }
 
 @include sm-block {
-  .articleInfoPicture img {
-    height: 100%;
-    object-fit: cover;
-  }
-  .otherInfo {
-    justify-content: space-between;
-  }
-  .articleInfoImageWrapper {
-    grid-column: 1;
-    grid-row: 1;
-    height: 200px;
-  }
   .articleInfoTextWrapper {
     grid-column: 1;
     grid-row: 2;

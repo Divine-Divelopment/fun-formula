@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Мастер-классы для детей</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="topHeaderWrapper" id="searchBlock">
+          <nav class="smallNavigation">
+            <ul class="smallNavigationList">
+              <li class="smallNavigationItem"><a class="smallNavigationLink" href="">Наши новости</a></li>
+              <li class="smallNavigationItem"><a class="smallNavigationLink" href="">Полезные статьи</a></li>
+              <li class="smallNavigationItem"><a class="smallNavigationLink" href="">Задать вопрос детскому психологу</a></li>
+            </ul>
+          </nav>
+          <div class="searchFormWrapper">
+            <form class="searchForm" action="/" method="Post">
+              <fieldset class="searchFieldWrapper">
+                <input type="search" inputmode="search" placeholder="Найти">
+              </fieldset>
+              <button class="searchButton" type="submit"><img src="img/svg/search.svg" alt="Search"></button>
+            </form>
+          </div>
+        </div>
+        <div class="mainHeaderWrapper">
+          <button class="mobileMenuButton" id="openModal">Открыть меню</button>
+          <div class="logo"><a class="logoLink" href="/">
+              <picture>
+                <source srcset="img/logo.webp" type="image/webp">
+                <source srcset="img/logo.jpg" type="image/jpeg"><img src="img/logo.jpg" alt="Логотип">
+              </picture></a></div>
+          <div class="textHeaderWrapper">
+            <p class="textHeader">Нет времени звонить?<br>Оставьте Ваш номер телефона и мы свяжемся</p>
+          </div>
+          <div class="headerButtonWrapper">
+            <button class="headerButton openModal" data-custom-open="modal-1" role="button"><span>Заказать звонок</span></button>
+          </div>
+          <div class="contactInfoWrapper">
+            <button class="mobileSearchButton" id="toggleSearch"><img src="img/svg/search-black.svg" alt="Search"></button>
+            <button class="cartButton"><img src="img/svg/shopping-cart.svg" alt="Корзина">
+              <p class="cartText">1<span>&nbsp;товар в корзине</span></p>
+            </button><a class="phoneLink mobileCallback" href="tel:84951330191"><img src="img/svg/phone.svg" alt="Заказать звонок">Тел.: 8 (495) 133 01 91</a><a class="whatsappLink" href="https://wa.me/89296405379"><img src="img/svg/whatsapp-header.svg" alt="Whatsapp">8 (929) 640 53 79</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="headerNavigation" id="navigationMenu">
+      <button class="closeMenuButton" id="closeMenu"><img src="img/svg/close.svg" alt="Закрыть"></button>
+      <div class="container">
+        <ul class="headerNavigationList">
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">О нас</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Мальчикам</a>
+            <div class="submenuWrapper">
+              <div class="container submenuBlockOuter">
+                <ul class="submenuBlock">
+                  <li class="submenuItem"><a class="submenuLink" href="">Супергерои</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Человек Паук и Бэтмен</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Дэдпул</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Черепашки ниньзя</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Железный человек</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Росомаха</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Звёздные войны</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">5 Элемент</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Трансформеры</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Халк</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Город Героев</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenuItem"><a class="submenuLink" href="">Приключения</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Индиана Джонс</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Холодное сердце</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Гарри Поттер</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">История игрушек</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Космические приключения</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Смурфики</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Робинзон Крузо</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Мадагаскар</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Ледниковый период</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">РИО</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenuItem"><a class="submenuLink" href="">Популярное</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Лего</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Панда Кунг-Фу</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Люди в чёрном</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Как приручить дракона</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Волшебный футбол</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Смурфики</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Чокнутый профессор</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Бакуган</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Делай Ноги</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Тачки</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenuItem"><a class="submenuLink" href="">Всё остальное</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Мистер Квак</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Король Арур</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Властелин колец</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Angry birds</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Лесная братва</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Питер Пэн</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Warcraft</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Самолёты</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Футбольный праздник</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Армейский праздник</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Девочкам</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Малышам</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Подросткам</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Мастер-классы</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Шоу-программа</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Дополнительно</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="bigBanner">
+      <div class="bigBannerImage">
+        <picture>
+          <source srcset="img/banner-image.webp" type="image/webp">
+          <source srcset="img/banner-image.jpg" type="image/jpeg"><img src="img/banner-image.jpg" alt="ХОЛОДНОЕ СЕРДЦЕ «ЛЕДЯНОЙ МОНСТР И ДРУЖБА СЕСТёР»">
+        </picture>
+      </div>
+      <div class="container">
+        <div class="bigBannerOuter">
+          <div class="bigBannerInfo">
+            <p class="minimumPrice">от 4500 &#8381;/час</p>
+            <h1 class="productTitle">ХОЛОДНОЕ СЕРДЦЕ<br/>«ЛЕДЯНОЙ МОНСТР И ДРУЖБА СЕСТёР»</h1>
+            <h3 class="productSubtitle">Герои детского праздника: смелая Анна, таинственная Эльза, Кристофф, Ханс, Олаф, Свен</h3>
+            <p class="productDescription">Мы приглашаем детей оказаться в королевстве Эрендел и окунуться в невероятные приключение вместе с любимейшими героинями потрясающей истории...</p><a class="watchVideo" data-fslightbox data-type="youtube" href="https://www.youtube.com/watch?v=yRbM2NIpZHY">Смотреть видео<span class="iconPlay"></span></a>
+          </div>
+        </div>
+        <div class="productsItems"><a class="prevProduct" href="/">
+            <div class="textButton">
+              <p class="productName">Гарри Поттер</p><span class="staticText">предыдущий</span>
+            </div></a><a class="nextProduct" href="/">
+            <div class="textButton">
+              <p class="productName">Как приручить дракона</p><span class="staticText">следующий</span>
+            </div></a></div>
+      </div>
+    </div>
+    <div class="pageTextBlock">
+      <div class="container">
+        <div class="pageTextBlockOuter">
+          <div class="pageTextInfo">
+            <div class="pageTextDescription">
+              <p> «Холодное сердце» - новый мультфильм Disney от создателей «Рапунцель», ещё более неожиданная и прекрасная история этой зимы… Ваша дочь без ума от красавицы Рапунцель? Тогда детский День Рождения с принцессой Анной приведёт её в восторг! И Вы точно узнаете героев «Холодного сердца», ведь сюжет мультфильма построен на сказке Ганса Кристиана Андерсона «Снежная Королева», любимой сказке и детей, и родителей.</p>
+              <p>На детском Дне Рождения Вашей дочери или сына будто по волшебству неожиданно появляются три храбрых героя сказки – принцесса Анна, храбрый Кристофф и его любимец олень Свен. В день праздника Ледяная Королева заколдовала королевство леденящим заклятьем и с каждой секундой продвигается всё дальше по всему миру. Смогут ли гости детского праздника снять леденящее заклятье?</p>
+              <p>Конечно же, ребята произносят торжественную клятву и отправляются в трудный и далёкий путь, а возглавит команду именинник(-ца)! Через волшебный портал Анна и её друзья отправляются по снежному полю к Ледяным Горам, чтобы найти сестру Анны, которая снимет заклятье. Гостям детского праздника предстоит обхитрить опасных троллей, накормив их вкусными мятными леденцами (игра с воздушными шариками), подружиться с милым снеговиком Олафом...</p>
+            </div>
+            <button class="moreTextButton desktopButton">Читать далее</button>
+          </div>
+          <div class="pageImageSlider">
+            <div class="swiper-container imageSlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide imageSlide">
+                  <picture class="mainSlideImage">
+                    <source srcset="img/slider1.webp" type="image/webp">
+                    <source srcset="img/slider1.jpg" type="image/jpeg"><img src="img/slider1.jpg" alt="Слайд">
+                  </picture>
+                </div>
+                <div class="swiper-slide imageSlide">
+                  <picture class="mainSlideImage">
+                    <source srcset="img/slider2.webp" type="image/webp">
+                    <source srcset="img/slider2.jpg" type="image/jpeg"><img src="img/slider2.jpg" alt="Слайд">
+                  </picture>
+                </div>
+                <div class="swiper-slide imageSlide">
+                  <picture class="mainSlideImage">
+                    <source srcset="img/slider3.webp" type="image/webp">
+                    <source srcset="img/slider3.jpg" type="image/jpeg"><img src="img/slider3.jpg" alt="Слайд">
+                  </picture>
+                </div>
+              </div>
+              <button class="swiper-button-prev image-swiper-button-prev"></button>
+              <button class="swiper-button-next image-swiper-button-next"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabsBlock">
+      <div class="titleBlock loadPDFBlock">
+        <div class="container">
+          <h2>Выбирете формат празника под ваш бюджет:</h2><a class="loadPDF" href="" download><img src="../img/svg/pdf.svg"></a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="tabsOuter">
+          <div class="buttons">
+            <button class="button" data-value="1"><span class="tabName">WOW-SHOW</span><span class="tabPrice">80 000 &#8381;</span></button>
+            <button class="button" data-value="2"><span class="tabName">SUPER-PARTY</span><span class="tabPrice">45 000 &#8381;</span></button>
+            <button class="button" data-value="3"><span class="tabName">Fun-PARTY</span><span class="tabPrice">4 500 &#8381;/час</span></button>
+          </div>
+          <div class="tabs">
+            <div class="tab tab--1 active">
+              <h4 class="tabTitle">Большой яркий праздник с авторскими развлечениями, максимальное удовольствие от полного погружения в сюжет</h4>
+              <ul class="tabContentList">
+                <li class="checked">Полный сценарий праздника</li>
+                <li class="checked">Продолжительность - 3 часа</li>
+                <li class="checked">Ведущие – 2 проф. актера</li>
+                <li class="checked">Выезд ивент-менеджера и технического ассистент</li>
+                <li class="checked">Ди-джей и проф. музыкальное оборудование (1000 Вт.)</li>
+                <li class="checked">Торжественное разбивание пиньяты</li>
+                <li class="checked">Шоу-программа с участием артистов на Ваш выбор</li>
+                <li class="checked">Взрывное бумажное шоу</li>
+                <li class="checked">Объемный игровой стафф</li>
+                <li class="checked">Карнавальная атрибутика (прокат)</li>
+                <li class="checked">Лавина из 200 воздушных шаров</li>
+                <li class="checked">Дизайнерский мастер-класс</li>
+                <li class="checked">Тематические дипломы в подарок</li>
+                <li class="checked">Трансфер (доставка праздника)</li>
+              </ul>
+            </div>
+            <div class="tab tab--2">
+              <h4 class="tabTitle">Средний праздник с авторскими развлечениями, максимальное удовольствие от полного погружения в сюжет</h4>
+              <ul class="tabContentList">
+                <li class="checked">Полный сценарий праздника</li>
+                <li class="checked">Продолжительность - 3 часа</li>
+                <li class="checked">Ведущие – 2 проф. актера</li>
+                <li class="checked">Выезд ивент-менеджера и технического ассистент</li>
+                <li class="checked">Ди-джей и проф. музыкальное оборудование (1000 Вт.)</li>
+                <li class="checked">Торжественное разбивание пиньяты</li>
+                <li class="checked">Шоу-программа с участием артистов на Ваш выбор</li>
+                <li class="checked">Взрывное бумажное шоу</li>
+                <li class="checked">Объемный игровой стафф</li>
+                <li class="checked">Карнавальная атрибутика (прокат)</li>
+                <li class="checked">Лавина из 200 воздушных шаров</li>
+              </ul>
+            </div>
+            <div class="tab tab--3">
+              <h4 class="tabTitle">Большой яркий праздник с авторскими развлечениями, максимальное удовольствие от полного погружения в сюжет</h4>
+              <ul class="tabContentList">
+                <li class="checked">Полный сценарий праздника</li>
+                <li class="checked">Продолжительность - 3 часа</li>
+                <li class="checked">Ведущие – 2 проф. актера</li>
+                <li class="checked">Выезд ивент-менеджера и технического ассистент</li>
+                <li class="checked">Ди-джей и проф. музыкальное оборудование (1000 Вт.)</li>
+                <li class="checked">Торжественное разбивание пиньяты</li>
+                <li class="checked">Шоу-программа с участием артистов на Ваш выбор</li>
+                <li class="checked">Взрывное бумажное шоу</li>
+                <li class="checked">Объемный игровой стафф</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="callbackFormBlock firstBackground">
+      <div class="container">
+        <h3 class="callbackFormTitle">Забронируйте сценарий на нужную дату</h3>
+        <div class="callbackFormBlockOuter">
+          <form class="callBackForm">
+            <fieldset class="formFieldWrapper">
+              <input class="formField" type="text" inputmode="text" placeholder="Ваше имя">
+            </fieldset>
+            <fieldset class="formFieldWrapper">
+              <input class="formField" type="phone" inputmode="tel" placeholder="Ваш телефон">
+            </fieldset>
+            <fieldset class="formFieldWrapper">
+              <input class="formField" type="email" inputmode="email" placeholder="Ваш e-mail">
+            </fieldset>
+            <fieldset class="formFieldWrapper">
+              <button class="submitButton" type="submit">Получить</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="bigGallery">
+      <div class="titleBlock">
+        <div class="container">
+          <h2>Принцесса Эльза удивила Подружек Алину и Кристину в их День рождения</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="bigGalleryTextBlock">
+          <p>Подружкам Кристине и Алине повезло родиться в один день, а значит - свой День Рождения они все чаще и чаще празднуют в один день! Нужно признаться, что большой снеговик Олаф по-началу даже слегка напугал девочек, однако позже стал центром внимания и поводом пообниматься в свое удовольствие!<br/>Смотрите фотоотчет с праздника!</p>
+        </div>
+        <div class="bigGalleryOuter">
+          <div class="gallerySlide">
+            <picture>
+              <source srcset="img/gallery1.webp" type="image/webp">
+              <source srcset="img/gallery1.jpg" type="image/jpeg"><img src="img/gallery1.jpg" alt="Картинка 1">
+            </picture>
+          </div>
+          <div class="gallerySlide">
+            <picture>
+              <source srcset="img/gallery2.webp" type="image/webp">
+              <source srcset="img/gallery2.jpg" type="image/jpeg"><img src="img/gallery2.jpg" alt="Картинка 2">
+            </picture>
+          </div>
+          <div class="gallerySlide">
+            <picture>
+              <source srcset="img/gallery3.webp" type="image/webp">
+              <source srcset="img/gallery3.jpg" type="image/jpeg"><img src="img/gallery3.jpg" alt="Картинка 3">
+            </picture>
+          </div>
+          <div class="gallerySlide">
+            <picture>
+              <source srcset="img/gallery4.webp" type="image/webp">
+              <source srcset="img/gallery4.jpg" type="image/jpeg"><img src="img/gallery4.jpg" alt="Картинка 4">
+            </picture>
+          </div>
+          <div class="gallerySlide">
+            <picture>
+              <source srcset="img/gallery5.webp" type="image/webp">
+              <source srcset="img/gallery5.jpg" type="image/jpeg"><img src="img/gallery5.jpg" alt="Картинка 5">
+            </picture>
+          </div>
+          <div class="gallerySlide">
+            <picture>
+              <source srcset="img/gallery6.webp" type="image/webp">
+              <source srcset="img/gallery6.jpg" type="image/jpeg"><img src="img/gallery6.jpg" alt="Картинка 6">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="cardsWrapper">
+      <div class="titleBlock">
+        <div class="container">
+          <h2>Также рекомендуем</h2>
+        </div>
+      </div>
+    </section>
+    <div class="smallCardsBlock">
+      <div class="container">
+        <div class="swiper-container smallCardsSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide smallCardsSlide">
+              <div class="card">
+                <div class="front">
+                  <picture>
+                    <source srcset="img/slide1.webp" type="image/webp">
+                    <source srcset="img/slide1.jpg" type="image/jpeg"><img src="img/slide1.jpg" alt="Человек Паук и Бэтмен">
+                  </picture>
+                </div>
+                <div class="back">
+                  <picture>
+                    <source srcset="img/slide1.webp" type="image/webp">
+                    <source srcset="img/slide1.jpg" type="image/jpeg"><img src="img/slide1.jpg" alt="Человек Паук и Бэтмен">
+                  </picture>
+                  <div class="cardText">
+                    <h4 class="cardName">Человек Паук и Бэтмен</h4>
+                    <p class="cardDescription">Человек паук на День Рождения - отличный подарок. Любимый герой – лучший гость, которого можно пригласить на детский праздник...</p><a class="moreInfoButton" href="">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="front">
+                  <picture>
+                    <source srcset="img/slide2.webp" type="image/webp">
+                    <source srcset="img/slide2.jpg" type="image/jpeg"><img src="img/slide2.jpg" alt="Детский праздник  в стиле «лего»">
+                  </picture>
+                </div>
+                <div class="back">
+                  <picture>
+                    <source srcset="img/slide2.webp" type="image/webp">
+                    <source srcset="img/slide2.jpg" type="image/jpeg"><img src="img/slide2.jpg" alt="Детский праздник  в стиле «лего»">
+                  </picture>
+                  <div class="cardText">
+                    <h4 class="cardName">Детский праздник  в стиле «лего»</h4>
+                    <p class="cardDescription">Добро пожаловать в Лего мир и на самый популярный детский праздник День Рождения. Для любителей знаменитого мультфильма!</p><a class="moreInfoButton" href="">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide smallCardsSlide">
+              <div class="card">
+                <div class="front">
+                  <picture>
+                    <source srcset="img/slide3.webp" type="image/webp">
+                    <source srcset="img/slide3.jpg" type="image/jpeg"><img src="img/slide3.jpg" alt="МИСТЕР ПИБОДИ И ШЕРМАН НА ДЕТСКИЙ ПРАЗДНИК">
+                  </picture>
+                </div>
+                <div class="back">
+                  <picture>
+                    <source srcset="img/slide3.webp" type="image/webp">
+                    <source srcset="img/slide3.jpg" type="image/jpeg"><img src="img/slide3.jpg" alt="МИСТЕР ПИБОДИ И ШЕРМАН НА ДЕТСКИЙ ПРАЗДНИК">
+                  </picture>
+                  <div class="cardText">
+                    <h4 class="cardName">МИСТЕР ПИБОДИ И ШЕРМАН НА ДЕТСКИЙ ПРАЗДНИК</h4>
+                    <p class="cardDescription">Мистер Пибоди и Шерман на детский праздник порадует любителей приключений. На Дне Рождения Вашего ребёнка мы запустим машину врени вэй-бэк!</p><a class="moreInfoButton" href="">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="front">
+                  <picture>
+                    <source srcset="img/slide4.webp" type="image/webp">
+                    <source srcset="img/slide4.jpg" type="image/jpeg"><img src="img/slide4.jpg" alt="САМОЛЁТЫ  НА ДЕТСКИЙ ПРАЗДНИК">
+                  </picture>
+                </div>
+                <div class="back">
+                  <picture>
+                    <source srcset="img/slide4.webp" type="image/webp">
+                    <source srcset="img/slide4.jpg" type="image/jpeg"><img src="img/slide4.jpg" alt="САМОЛЁТЫ  НА ДЕТСКИЙ ПРАЗДНИК">
+                  </picture>
+                  <div class="cardText">
+                    <h4 class="cardName">САМОЛЁТЫ  НА ДЕТСКИЙ ПРАЗДНИК</h4><a class="moreInfoButton" href="">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="swiper-button-prev smallCards-swiper-button-prev"></button>
+          <button class="swiper-button-next smallCards-swiper-button-next"></button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footerOuter">
+          <div class="footerContactInfoWrapper"><a class="phoneLink" href="tel:84951330191">Тел.: 8 (495) 133 01 91</a><a class="whatsappLink" href="https://wa.me/89296405379"><img src="img/svg/whatsapp-footer.svg" alt="Whatsapp">8 (929) 640 53 79</a></div>
+          <ul class="socialNetworksFooter">
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/vk.svg" alt="Вконтакте"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/facebook.svg" alt="Facebook"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/whatsapp.svg" alt="Whatsapp"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/twitter.svg" alt="Twitter"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
+          </ul>
+          <div class="newsFormWrapper">
+            <p class="formTitle">Подпешитесь на наши новости</p>
+            <form class="newsForm">
+              <fieldset class="newsFormField">
+                <input type="email" inputmode="email" placeholder="E-mail">
+              </fieldset>
+              <button class="newsFormButton" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyBlock">
+          <p class="copyText">Все права на программы защищены. Все фотографии на сайте являются собственностью компании «Fun-Formula» и не могут использоваться без согласия правообладателя.<br>© 2014 «Fun-Formula»</p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title modalFormTitle" id="modal-1-title">Заказать звонок</h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-contentModal">
+            <form class="modalForm">
+              <fieldset class="modalFormFieldWrapper">
+                <input class="modalFormField" type="text" inputmode="text" placeholder="Ваше имя">
+              </fieldset>
+              <fieldset class="modalFormFieldWrapper">
+                <input class="modalFormField" type="phone" inputmode="tel" placeholder="Ваш телефон">
+              </fieldset>
+              <fieldset class="modalFormFieldWrapper">
+                <button class="modalSubmitButton" type="submit">Отправить</button>
+              </fieldset>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="js/product-page.js"></script>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>
