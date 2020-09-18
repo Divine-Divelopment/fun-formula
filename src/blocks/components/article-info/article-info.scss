@@ -12,7 +12,7 @@
 
 .articleInfoBlockOuter {
   display: grid;
-  grid-template-columns: calc(50% - 40px) 50%;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   width: 100%;
   padding: 15px 0;
@@ -45,26 +45,26 @@
     letter-spacing: 0.38px;
     text-align: left;
     color: var(--dark-color);
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     word-break: break-word;
     &:last-child {
       margin-bottom: 0;
     }
     p {
       display: inline-block;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
       &:last-child {
         margin-bottom: 0;
       }
     }
     ul {
       &:last-child {
-        margin-bottom: 14px;
+        margin-bottom: 10px;
       }
     }
     ol.stepsList {
       li {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         &:last-child {
           margin-bottom: 0;
         }
@@ -196,6 +196,9 @@
   }
   .articleInfoTextWrapper .textWrapper ol.stepsList li {
     margin-bottom: 0;
+  }
+  .articleInfoTextWrapper .textWrapper p {
+    margin-bottom: 5px;
   }
 }
 

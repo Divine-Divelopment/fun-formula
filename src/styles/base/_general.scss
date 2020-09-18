@@ -43,10 +43,16 @@ h1, h2, h3, h4, h5, h6, ul, ol {
   padding: 0;
   font-family: var(--secondary-family);
 }
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 26px;
+}
 ol {
   list-style-type: decimal;
   list-style-position: inside;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   &:last-child {
     margin-bottom: 0;
   }
@@ -64,10 +70,12 @@ ol {
   }
 }
 
+
+
 ul {
   list-style-type: disc;
   list-style-position: inside;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   &:last-child {
     margin-bottom: 0;
   }
@@ -82,6 +90,12 @@ ul {
     text-align: left;
     color: var(--dark-color);
     word-break: break-word;
+  }
+}
+
+@include md-block {
+  ul, ol {
+    margin-bottom: 5px;
   }
 }
 
@@ -126,7 +140,7 @@ p {
   text-align: left;
   color: var(--dark-color);
   word-break: break-word;
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
 }
 
@@ -292,9 +306,55 @@ p {
 .textBlockOuter {
   margin: 15px 0;
   p {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+}
+
+.watchVideo {
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  border-radius: 2px;
+  background-color: var(--dark-shaded-color);
+  font-size: 20px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--light-color);
+  text-decoration: none;
+  padding: 5px 10px;
+  .iconPlay {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: solid 1px var(--light-color);
+    margin-left: 11px;
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 0 7px 10px;
+      border-color: transparent transparent transparent var(--light-color);
+    }
+  }
+  &.reverseButton {
+    .iconPlay {
+      margin-right: 11px;
+      margin-left: 0;
     }
   }
 }
@@ -311,6 +371,25 @@ p {
   }
   p, ul li, ol li {
     font-size: 12px;
+  }
+  .watchVideo {
+    min-height: 43px;
+    border-radius: 2px;
+    font-size: 16px;
+    .iconPlay {
+      width: 22px;
+      height: 22px;
+      margin-left: 7px;
+      &:before {
+        border-width: 5px 0 5px 8px;
+      }
+    }
+    &.reverseButton {
+      .iconPlay {
+        margin-right: 7px;
+        margin-left: 0;
+      }
+    }
   }
 }
 
@@ -373,6 +452,25 @@ p {
     width: 26px;
     height: 26px;
     background-size: 18px;
+  }
+  .watchVideo {
+    min-height: 29px;
+    border-radius: 2px;
+    font-size: 12px;
+    .iconPlay {
+      width: 19px;
+      height: 19px;
+      margin-left: 5px;
+      &:before {
+        border-width: 4.5px 0 4.5px 7px;
+      }
+    }
+    &.reverseButton {
+      .iconPlay {
+        margin-right: 5px;
+        margin-left: 0;
+      }
+    }
   }
 }
 

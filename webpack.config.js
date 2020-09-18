@@ -7,6 +7,7 @@ module.exports = {
         "article-page": "./src/js/pages/article-page.js",
         "articles-page": "./src/js/pages/articles-page.js",
         "product-page": "./src/js/pages/product-page.js",
+        "about-page": "./src/js/pages/about-page.js",
     },
 
     output: {

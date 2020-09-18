@@ -425,7 +425,7 @@
 @include md-block {
   .header {
     position: sticky;
-    z-index: 99;
+    z-index: 100;
     top: 0;
     left: 0;
     background: var(--light-color);

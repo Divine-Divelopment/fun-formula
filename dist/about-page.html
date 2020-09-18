@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Мастер-классы для детей</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="topHeaderWrapper" id="searchBlock">
+          <nav class="smallNavigation">
+            <ul class="smallNavigationList">
+              <li class="smallNavigationItem"><a class="smallNavigationLink" href="">Наши новости</a></li>
+              <li class="smallNavigationItem"><a class="smallNavigationLink" href="">Полезные статьи</a></li>
+              <li class="smallNavigationItem"><a class="smallNavigationLink" href="">Задать вопрос детскому психологу</a></li>
+            </ul>
+          </nav>
+          <div class="searchFormWrapper">
+            <form class="searchForm" action="/" method="Post">
+              <fieldset class="searchFieldWrapper">
+                <input type="search" inputmode="search" placeholder="Найти">
+              </fieldset>
+              <button class="searchButton" type="submit"><img src="img/svg/search.svg" alt="Search"></button>
+            </form>
+          </div>
+        </div>
+        <div class="mainHeaderWrapper">
+          <button class="mobileMenuButton" id="openModal">Открыть меню</button>
+          <div class="logo"><a class="logoLink" href="/">
+              <picture>
+                <source srcset="img/logo.webp" type="image/webp">
+                <source srcset="img/logo.jpg" type="image/jpeg"><img src="img/logo.jpg" alt="Логотип">
+              </picture></a></div>
+          <div class="textHeaderWrapper">
+            <p class="textHeader">Нет времени звонить?<br>Оставьте Ваш номер телефона и мы свяжемся</p>
+          </div>
+          <div class="headerButtonWrapper">
+            <button class="headerButton openModal" data-custom-open="modal-1" role="button"><span>Заказать звонок</span></button>
+          </div>
+          <div class="contactInfoWrapper">
+            <button class="mobileSearchButton" id="toggleSearch"><img src="img/svg/search-black.svg" alt="Search"></button>
+            <button class="cartButton"><img src="img/svg/shopping-cart.svg" alt="Корзина">
+              <p class="cartText">1<span>&nbsp;товар в корзине</span></p>
+            </button><a class="phoneLink mobileCallback" href="tel:84951330191"><img src="img/svg/phone.svg" alt="Заказать звонок">Тел.: 8 (495) 133 01 91</a><a class="whatsappLink" href="https://wa.me/89296405379"><img src="img/svg/whatsapp-header.svg" alt="Whatsapp">8 (929) 640 53 79</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="headerNavigation" id="navigationMenu">
+      <button class="closeMenuButton" id="closeMenu"><img src="img/svg/close.svg" alt="Закрыть"></button>
+      <div class="container">
+        <ul class="headerNavigationList">
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">О нас</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Мальчикам</a>
+            <div class="submenuWrapper">
+              <div class="container submenuBlockOuter">
+                <ul class="submenuBlock">
+                  <li class="submenuItem"><a class="submenuLink" href="">Супергерои</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Человек Паук и Бэтмен</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Дэдпул</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Черепашки ниньзя</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Железный человек</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Росомаха</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Звёздные войны</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">5 Элемент</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Трансформеры</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Халк</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Город Героев</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenuItem"><a class="submenuLink" href="">Приключения</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Индиана Джонс</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Холодное сердце</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Гарри Поттер</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">История игрушек</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Космические приключения</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Смурфики</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Робинзон Крузо</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Мадагаскар</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Ледниковый период</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">РИО</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenuItem"><a class="submenuLink" href="">Популярное</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Лего</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Панда Кунг-Фу</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Люди в чёрном</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Как приручить дракона</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Волшебный футбол</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Смурфики</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Чокнутый профессор</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Бакуган</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Делай Ноги</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Тачки</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenuItem"><a class="submenuLink" href="">Всё остальное</a>
+                    <ul class="subcategoryList">
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Мистер Квак</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Король Арур</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Властелин колец</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Angry birds</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Лесная братва</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Питер Пэн</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Warcraft</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Самолёты</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Футбольный праздник</a></li>
+                      <li class="subcategoryItem"><a class="subcategoryLink" href="">Армейский праздник</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Девочкам</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Малышам</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Подросткам</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Мастер-классы</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Шоу-программа</a>
+          </li>
+          <li class="headerNavigationItem"><a class="headerNavigationLink" href="">Дополнительно</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="aboutBanner">
+      <div class="aboutBannerImage">
+        <picture>
+          <source srcset="img/about.webp" type="image/webp">
+          <source srcset="img/banner.jpg" type="image/jpeg"><img src="img/banner.jpg" alt="Мы создаем праздники, позволяющие стать ближе друг другу">
+        </picture>
+      </div>
+      <div class="container">
+        <div class="aboutBannerOuter">
+          <div class="aboutBannerInfo"><span class="aboutBannerSubtitle">Миссия Компании:</span>
+            <h3 class="aboutBannerTitle">Мы создаем праздники, позволяющие<br/>стать ближе друг другу</h3><a class="watchVideo reverseButton" data-fslightbox="gallery" href="https://www.youtube.com/watch?v=4A0ptn6hf2Q"><span class="iconPlay"></span>Смотреть видео</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutBlock">
+      <div class="titleBlock">
+        <div class="container">
+          <h1>О нас</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="aboutBlockOuter">
+          <div class="aboutBlockImage">
+            <picture>
+              <source srcset="img/director.webp" type="image/webp">
+              <source srcset="img/director.jpg" type="image/jpeg"><img src="img/director.jpg" alt="Анастасия">
+            </picture>
+          </div>
+          <div class="aboutBlockText">
+            <div class="aboutBlockTextOuter">
+              <p>«Меня зовут Анастасия, я являюсь основательницей и директором Компании «FUN-FORMULA».Я рада приветствовать Вас на нашем сайте и с радостью расскажу Вам о нас.</p>
+              <p>Компания «FUN-FORMULA» осуществляет свою деятельность с 1 июня 2008  года, оказывает услуги для физических лиц, а также для партнеров B2B-сегмента.</p>
+              <p>Наша задача – предоставлять максимально разнообразный спектр услуг, организовывать персонализированные праздники, выводить на рынок ивент-индустрии новые развлекательные решения. Для нас важно, чтобы подготовка к мероприятия осуществлялась заранее, исполнители были проверенными, а заказчик удовлетворён на оценку 10 из 10ти.</p>
+              <p>Наша задача – предоставлять максимально разнообразный спектр услуг, организовывать персонализированные праздники, выводить на рынок ивент-индустрии новые развлекательные решения. Для нас важно, чтобы подготовка к мероприятия осуществлялась заранее, исполнители были проверенными, а заказчик удовлетворён на оценку 10 из 10ти.</p>
+              <p>В своей работе мы придерживаемся принципов «кайдзен»: накапливаем опыт и ежедневно улучшаем внутренние организационные процессы, делимся знаниями с другими участниками ивент-сферы и создаем интересные решения для клиентов.</p>
+              <p>Для меня детские праздники - источник профессионального  и личностного роста. Они позволяют реализовывать креативные идеи в жизнь, осваивать различные навыки, создавать рабочие места и объединять людей в сплоченные команды.</p>
+              <p>Я искренне желаю, чтобы Ваши дети раскрыли свой творческий потенциал. Пусть Ваша семья будет полной и счастливой, а Ваши самые смелые планы воплощаются в жизнь!»</p>
+            </div>
+            <button class="moreTextButton">Читать далее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="historyBlock">
+      <h2 class="historyTitle">11 ЛЕТ УСПЕШНОЙ ИСТОРИИ:</h2>
+      <div class="historyWrapper">
+        <div class="historyLine"></div>
+        <div class="container">
+          <div class="historyOuter">
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2008</strong><strong class="title">Рождение компании</strong></div>
+            </div>
+            <div class="historyText first-line"><strong class="year">2008</strong><strong class="title">Рождение компании</strong>
+              <p class="historyDescription">Потрясающий год в жизни компании. Из мечты делать хотя бы одного ребенка в день счастливее родилась идея создавать яркие, креативные и эффектные праздники. И тем самым помогать взрослым вырываться из будничных событий и сближать всех членов семьи в значимые для них даты – такой стала наша миссия с этого года!</p>
+            </div>
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2009</strong><strong class="title">Значительное увеличение&nbsp;<br/>спектра услуг</strong></div>
+            </div>
+            <div class="historyText first-line"><strong class="year">2009</strong><strong class="title">Значительное увеличение  спектра услуг</strong>
+              <p class="historyDescription">Рост количества клиентов потребовал расширение возможных услуг, и в этот год компания внесла в прайс около сотни новых позиций. С таким арсеналом идей родители смогут праздновать Дни Рождения своих детей до тех пор, когда у них самих появятся дети!</p>
+            </div>
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2010</strong><strong class="title">Начало работы&nbsp;<br/>B2B сектором</strong></div>
+            </div>
+            <div class="historyText first-line"><strong class="year">2010</strong><strong class="title">Начало работы B2B сектором</strong>
+              <p class="historyDescription">Компания успешно включилась в работу с крупными юридическими лицами, оказывая услуги по проведения рекламных акций и развлекательных программ на территории ряда крупных торгово-развлекательных центров, детских клубов и ресторанов. Целевая аудитория как всегда  дети и родители.</p>
+            </div>
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2011</strong><strong class="title"> Реализация мероприятий  в странах СНГ</strong></div>
+            </div>
+            <div class="historyText second-line"><strong class="year">2011</strong><strong class="title">Реализация мероприятий  в странах СНГ</strong>
+              <p class="historyDescription">Мы освоили работу с заграничными ивент-агенствами и партнерами, и сделали еще один шаг к мечте проводить праздники на различных языках и для детей разнообразных национальностей. Нужно признаться  нам это понравилось.</p>
+            </div>
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2012</strong><strong class="title"> Собственная швейная мастерская</strong></div>
+            </div>
+            <div class="historyText second-line"><strong class="year">2012</strong><strong class="title">Собственная швейная мастерская</strong>
+              <p class="historyDescription">Создание карнавальных и ростовых костюмов, реквизита было перенесено в собственное пространство, что позволило значительно увеличить производительность. Теперь мы успеваем отшивать ряд запросов на опережение кинопоказов, что является конкурентным преимуществом.</p>
+            </div>
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2013</strong><strong class="title">Внедрение школы актеров-аниматоров</strong></div>
+            </div>
+            <div class="historyText second-line"><strong class="year">2013</strong><strong class="title">Внедрение школы актеров-аниматоров</strong>
+              <p class="historyDescription">Создание карнавальных и ростовых костюмов, реквизита было перенесено в собственное пространство, что позволило значительно увеличить производительность. Теперь мы успеваем отшивать ряд запросов на опережение кинопоказов, что является конкурентным преимуществом.</p>
+            </div>
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2014</strong><strong class="title">Развитие благотворительных выездов в детские онкологические центры</strong></div>
+            </div>
+            <div class="historyText third-line"><strong class="year">2014</strong><strong class="title">Развитие благотворительных выездов в детские онкологические центры</strong>
+              <p class="historyDescription">Есть дети здоровые, а есть дети, имеющие очень большие проблемы со здоровьем. Такие дети и их родители нуждаются в интересном, отвлекающем от дурных мыслей досуге. Предоставляя им возможность наблюдать за праздником или делать что-то творческое – мы позволяем им продолжать быть сильными и бороться за жизнь детей вместе с врачами.</p>
+            </div>
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2015</strong><strong class="title"> Создание программы для детей из детских домов</strong></div>
+            </div>
+            <div class="historyText third-line"><strong class="year">2015</strong><strong class="title">Создание программы для детей из детских домов</strong>
+              <p class="historyDescription">Мы продолжаем социальную тему и разрабатываем три универсальных сценария – «Гарри Потер», «Супергерои» и «Алиса в стране Чудес» для выездов в детские дома, чтобы через сказочных героев учить детей быть увереннее в себе, верить в свои силы. Да, это такая малость… Однако если выезды каждый месяц -  это уже большое дело.</p>
+            </div>
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2016</strong><strong class="title">Старт «мозговых штурмов»</strong></div>
+            </div>
+            <div class="historyText third-line"><strong class="year">2016</strong><strong class="title">Старт «мозговых штурмов»</strong>
+              <p class="historyDescription">Увлекательные три часа модерации и незабываемого общения за чашкой горячего шоколада в любимом кафе, наполненные юмором, оригинальными идеями и неожиданными истолкованиями сюжета. Что может быть более вдохновляющим? Да, мы запустили мозговые штурмы! И каждый из них может превратиться в детализированный сценарий к Вашему празднику.</p>
+            </div>
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2017</strong><strong class="title">Разработка собственных шоу-программ</strong></div>
+            </div>
+            <div class="historyText fourth-line"><strong class="year">2017</strong><strong class="title">Разработка собственных шоу-программ</strong>
+              <p class="historyDescription">Мы и раннее придерживались политики не «перепродавать» услуги, а «создавать». Это позволяет предоставлять и хорошую цену Клиентам, и руководить творческим и организационным процессом - что не маловажно. Однако в этом году мы планово перешли на собственное исполнение ряда популярных шоу-программ.</p>
+            </div>
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2018</strong><strong class="title">Внедрение системы контроля качества</strong></div>
+            </div>
+            <div class="historyText fourth-line"><strong class="year">2018</strong><strong class="title">Внедрение системы контроля качества</strong>
+              <p class="historyDescription">Мы задействовали сразу несколько уровней в обеспечении менеджерского состава обратной связью с мероприятий, использовав возможности живого присутствия, телефонного общения, самоответственности исполнителей. Это позволило получать информацию оперативно, из разных источников и корректировать работу в соответствии с пожеланиями.</p>
+            </div>
+            <div class="historyItem">
+              <div class="historyInfo"><strong class="year">2019</strong><strong class="title">Запуск актерского курса</strong></div>
+            </div>
+            <div class="historyText fourth-line"><strong class="year">2019</strong><strong class="title">Запуск актерского курса</strong>
+              <p class="historyDescription">Пятидневный цикл занятий сценическим движением и речью, постановка тематических этюдов и большой арсенал актерских упражнений теперь позволяет нам еще более эффективно подготавливать исполнительский состав для проведения разнообразных театрализованных представлений.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="numbersBlock">
+      <div class="titleBlock">
+        <div class="container">
+          <h2>«Fun-Formula» Сегодня:</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="numbersBlockOuter">
+          <div class="numberBlock">
+            <div class="numberBlockHeader">
+              <h3 class="numberTitle">11</h3>
+              <p class="numberSubtitle">БЕЗОСТАНОВОЧНЫХ ЛЕТ БЛАГОТВОРИТЕЛЬНЫХ ВЫЕЗДОВ</p>
+            </div>
+            <div class="numberBlockMain">
+              <p>Коллектив компании регулярно реализует праздники и мастер-классы для детей из московского областного онкологического диспансера (г. Балашиха), а также НМИЦ ДГОИ  имени Дмитрия Рогачёва (г. Москва). Помимо этого, мы осуществляем выезды в областные детские дома (г. Коломна).</p>
+            </div>
+          </div>
+          <div class="numberBlock">
+            <div class="numberBlockHeader">
+              <h3 class="numberTitle">450</h3>
+              <p class="numberSubtitle">МЕРОПРИЯТИЙ ЕЖЕМЕСЯЧНО</p>
+            </div>
+            <div class="numberBlockMain">
+              <p>Мы гордимся и ценим Ваше доверие. Поэтому за всеми мероприятиями и каждым праздником в отдельности мы ведем особый контроль. Залог успеха это своевременная и полноценная подготовка, отбор лучших исполнителей и их договорные обязательства перед Компанией.</p>
+            </div>
+          </div>
+          <div class="numberBlock">
+            <div class="numberBlockHeader">
+              <h3 class="numberTitle">150</h3>
+              <p class="numberSubtitle">САМЫХ ПОПУЛЯРНЫХ СЦЕНАРИЕВ</p>
+            </div>
+            <div class="numberBlockMain">
+              <p>В арсенале Компании обширная костюмерная, а также - готовые программы детских праздников как с советскими персонажами, так и с самыми популярными героями мультфильмов, только выходящих на киноэкраны города. Независимо от того, чем увлекается Ваш сын или дочь – мы уже знаем, чем Вас удивить.</p>
+            </div>
+          </div>
+          <div class="numberBlock">
+            <div class="numberBlockHeader">
+              <h3 class="numberTitle">1000</h3>
+              <p class="numberSubtitle">ЧЕЛОВЕК В КОМАНДЕ</p>
+            </div>
+            <div class="numberBlockMain">
+              <p>Мы выстроили собственный отдел по подбору и обучению исполнителей. Ежемесячно наш коллектив пополняют около сотни человек, и только самые успешные из них войдут в основной состав анимационной команды. Каждому из них предстоит реализовывать многочисленные праздники вместе с нами.</p>
+            </div>
+          </div>
+          <div class="numberBlock">
+            <div class="numberBlockHeader">
+              <h3 class="numberTitle">№1</h3>
+              <p class="numberSubtitle">ТОЛЬКО ЛУЧШИЕ ИСПОЛНИТЕЛИ</p>
+            </div>
+            <div class="numberBlockMain">
+              <p>Мы стараемся привлекать к работе только проверенных исполнителей, которые несут ответственность за качественную подготовку, своевременное прибытие на мероприятие и выкладываются на все 100% перед публикой.</p>
+            </div>
+          </div>
+          <div class="numberBlock">
+            <div class="numberBlockHeader">
+              <h3 class="numberTitle">10</h3>
+              <p class="numberSubtitle">СОБСТВЕННЫХ ШОУ-ПРОГРАММ</p>
+            </div>
+            <div class="numberBlockMain">
+              <p>Имея свою материальную базу, мы вывели в работу ряд популярных шоу-программ, таких как: «лайт-пэйнтинг», «теневой театр», «поролоновое шоу», «бумажное шоу», «ленточное шоу» и не только. Каждое из них проходит под музыкальноесопровождение и имеет возможность стилизации в тематике любого сценария.</p>
+            </div>
+          </div>
+          <div class="numberBlock">
+            <div class="numberBlockHeader">
+              <h3 class="numberTitle">15</h3>
+              <p class="numberSubtitle">ФОРМАТОВ РЕСТОРАННОЙ АНИМАЦИИ</p>
+            </div>
+            <div class="numberBlockMain">
+              <p>Разработанная нами оригинальная программа позволяет руководству ресторана выбрать наиболее подходящий вид активности и способ привлечения семейной аудитории в свое заведение, что не маловажно в условиях высокой конкуренции.</p>
+            </div>
+          </div>
+          <div class="numberBlock">
+            <div class="numberBlockHeader">
+              <h3 class="numberTitle">5</h3>
+              <p class="numberSubtitle">ТРЕНИНГОВЫХ ПРОГРАММ</p>
+            </div>
+            <div class="numberBlockMain">
+              <p>Чтобы отвечать за уровень подготовки наших исполнителей в Компании функционирует  школа для актеров-аниматоров. Она включает в себя тренинги, посвященные детской возрастной психологии, игровой технике и практике, навыкам детского аквагримма, сценарным основам и постановке танцевальных флэш-мобов.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="companyValuesBlock">
+      <div class="titleBlock">
+        <div class="container">
+          <h2>Ценности  компании:</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="companyValuesBlockOuter">
+          <div class="swiper-container valuesSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide valueSlide">
+                <div class="valueImageBlock">
+                  <picture>
+                    <source srcset="img/about-slide1.webp" type="image/webp">
+                    <source srcset="img/about-slide1.jpg" type="image/jpeg"><img src="img/about-slide1.jpg" alt="Анастасия">
+                  </picture>
+                </div>
+                <div class="valueInfoBlock">
+                  <h4 class="valueTitle">Относиться персонально к каждому<br/>празднику и ребенку.</h4>
+                  <p class="valueDescription">Все люди разные, они не обязаны быть похожими друг<br/>на друга и хотеть одного и того же.</p>
+                </div>
+              </div>
+              <div class="swiper-slide valueSlide">
+                <div class="valueImageBlock">
+                  <picture>
+                    <source srcset="img/about-slide2.webp" type="image/webp">
+                    <source srcset="img/about-slide2.jpg" type="image/jpeg"><img src="img/about-slide2.jpg" alt="Анастасия">
+                  </picture>
+                </div>
+                <div class="valueInfoBlock">
+                  <h4 class="valueTitle">Быть клиент-ориентированными.</h4>
+                  <p class="valueDescription">Выявляем потребности и удовлетворяем их, стараясь превзойти<br/>Ваши лучшие ожидания.</p>
+                </div>
+              </div>
+              <div class="swiper-slide valueSlide">
+                <div class="valueImageBlock">
+                  <picture>
+                    <source srcset="img/about-slide3.webp" type="image/webp">
+                    <source srcset="img/about-slide3.jpg" type="image/jpeg"><img src="img/about-slide3.jpg" alt="Анастасия">
+                  </picture>
+                </div>
+                <div class="valueInfoBlock">
+                  <h4 class="valueTitle">Быть ответственными.</h4>
+                  <p class="valueDescription">Мы реализовываем услуги качественно и в срок, и отвечаем за результат.</p>
+                </div>
+              </div>
+              <div class="swiper-slide valueSlide">
+                <div class="valueImageBlock">
+                  <picture>
+                    <source srcset="img/about-slide4.webp" type="image/webp">
+                    <source srcset="img/about-slide4.jpg" type="image/jpeg"><img src="img/about-slide4.jpg" alt="Анастасия">
+                  </picture>
+                </div>
+                <div class="valueInfoBlock">
+                  <h4 class="valueTitle">Получать удовольствие от работы каждый день.</h4>
+                  <p class="valueDescription">Творчество - особый вид деятельности, оно в самом себе несет удовлетворение.</p>
+                </div>
+              </div>
+              <div class="swiper-slide valueSlide">
+                <div class="valueImageBlock">
+                  <picture>
+                    <source srcset="img/about-slide5.webp" type="image/webp">
+                    <source srcset="img/about-slide5.jpg" type="image/jpeg"><img src="img/about-slide5.jpg" alt="Анастасия">
+                  </picture>
+                </div>
+                <div class="valueInfoBlock">
+                  <h4 class="valueTitle">Самосовершенствоваться.</h4>
+                  <p class="valueDescription">Мастерами кунг-фу не рождаются, ими становятся</p>
+                </div>
+              </div>
+              <div class="swiper-slide valueSlide">
+                <div class="valueImageBlock">
+                  <picture>
+                    <source srcset="img/about-slide6.webp" type="image/webp">
+                    <source srcset="img/about-slide6.jpg" type="image/jpeg"><img src="img/about-slide6.jpg" alt="Анастасия">
+                  </picture>
+                </div>
+                <div class="valueInfoBlock">
+                  <h4 class="valueTitle">Самореализовываться.</h4>
+                  <p class="valueDescription">Мы не знаем, кто мы, пока не увидим, на что мы способны.</p>
+                </div>
+              </div>
+              <div class="swiper-slide valueSlide">
+                <div class="valueImageBlock">
+                  <picture>
+                    <source srcset="img/about-slide7.webp" type="image/webp">
+                    <source srcset="img/about-slide7.jpg" type="image/jpeg"><img src="img/about-slide7.jpg" alt="Анастасия">
+                  </picture>
+                </div>
+                <div class="valueInfoBlock">
+                  <h4 class="valueTitle">Поддерживать друг друга</h4>
+                  <p class="valueDescription">Добрым словом, делом, тактичным советом или шуткой</p>
+                </div>
+              </div>
+            </div>
+            <button class="swiper-button-prev values-swiper-button-prev"></button>
+            <div class="swiper-pagination valuesPagination"></div>
+            <button class="swiper-button-next values-swiper-button-next"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="allInfoBlock">
+      <div class="container">
+        <div class="allInfoBlockOuter">
+          <div class="mapBlock">
+            <div class="map" id="map"></div>
+          </div>
+          <div class="informationList"><a class="informationItem phoneItem" href="tel:+74951330191">+7 (495) 133 01 91</a><a class="informationItem emailItem" href="mailto:company@fun-formula.com">company@fun-formula.com</a>
+            <p class="informationItem timeItem">Ежедневно с 9:00 до 21:00</p>
+            <p class="informationItem positionItem">Москва, ул.Щербаковская, д.3,<br/>БЦ «Щербаковский», 12 этаж, офис №1212</p>
+            <p class="informationItem bankItem">ООО «ФАН-ФОРМУЛА»<br/>ИНН: 7719478783</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footerOuter">
+          <div class="footerContactInfoWrapper"><a class="phoneLink" href="tel:84951330191">Тел.: 8 (495) 133 01 91</a><a class="whatsappLink" href="https://wa.me/89296405379"><img src="img/svg/whatsapp-footer.svg" alt="Whatsapp">8 (929) 640 53 79</a></div>
+          <ul class="socialNetworksFooter">
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/vk.svg" alt="Вконтакте"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/facebook.svg" alt="Facebook"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/whatsapp.svg" alt="Whatsapp"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/twitter.svg" alt="Twitter"></a></li>
+            <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
+          </ul>
+          <div class="newsFormWrapper">
+            <p class="formTitle">Подпешитесь на наши новости</p>
+            <form class="newsForm">
+              <fieldset class="newsFormField">
+                <input type="email" inputmode="email" placeholder="E-mail">
+              </fieldset>
+              <button class="newsFormButton" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyBlock">
+          <p class="copyText">Все права на программы защищены. Все фотографии на сайте являются собственностью компании «Fun-Formula» и не могут использоваться без согласия правообладателя.<br>© 2014 «Fun-Formula»</p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title modalFormTitle" id="modal-1-title">Заказать звонок</h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-contentModal">
+            <form class="modalForm">
+              <fieldset class="modalFormFieldWrapper">
+                <input class="modalFormField" type="text" inputmode="text" placeholder="Ваше имя">
+              </fieldset>
+              <fieldset class="modalFormFieldWrapper">
+                <input class="modalFormField" type="phone" inputmode="tel" placeholder="Ваш телефон">
+              </fieldset>
+              <fieldset class="modalFormFieldWrapper">
+                <button class="modalSubmitButton" type="submit">Отправить</button>
+              </fieldset>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="js/about-page.js"></script>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>

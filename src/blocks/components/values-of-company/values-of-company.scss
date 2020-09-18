@@ -1,0 +1,224 @@
+.companyValuesBlock {
+  display: flex;
+  flex-direction: column;
+}
+.companyValuesBlockOuter {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.valueSlide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
+  min-height: 300px;
+  background: var(--dark-color);
+}
+
+.valueImageBlock {
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.valueInfoBlock {
+  padding: 127px 15px 20px 96px;
+  .valueTitle {
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--light-color);
+  }
+  .valueDescription {
+    line-height: 1.4;
+    color: var(--light-color);
+    margin-top: 20px;
+  }
+}
+
+.valuesPagination {
+  display: inline-flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 45px;
+  left: calc(50% + 147px);
+  width: auto;
+  height: 72px;
+  font-size: 45px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--light-color);
+  line-height: 72px;
+  span {
+    padding: 0 7px;
+  }
+  .swiper-pagination-current {
+    position: relative;
+    font-size: 72px;
+    top: -7px;
+  }
+}
+
+.values-swiper-button-prev {
+  --swiper-navigation-size: 35px;
+  position: absolute;
+  top: 84px;
+  left: calc(50% + 96px);
+  &.swiper-button-disabled {
+    display: block;
+  }
+}
+
+.values-swiper-button-next {
+  --swiper-navigation-size: 35px;
+  position: absolute;
+  top: 84px;
+  left: calc(50% + 263px);
+  &.swiper-button-disabled {
+    display: block;
+  }
+}
+
+@include lg-block {
+  .companyValuesBlockOuter {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .valueSlide {
+    grid-template-columns: repeat(1, 1fr);
+    min-height: auto;
+  }
+  .valuesPagination {
+    display: none;
+  }
+  .values-swiper-button-next {
+    position: absolute;
+    top: auto;
+    right: 19px;
+    bottom: 46px;
+    left: auto;
+  }
+
+  .values-swiper-button-prev {
+    position: absolute;
+    top: auto;
+    bottom: 46px;
+    left: 19px;
+  }
+  .valueInfoBlock {
+    padding: 30px 80px;
+    text-align: center;
+  }
+  .valueInfoBlock .valueTitle {
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0;
+    br {
+      display: none;
+    }
+  }
+  .valueInfoBlock .valueDescription {
+    font-size: 15px;
+    max-width: 500px;
+    margin: 15px auto 0;
+    text-align: center;
+    letter-spacing: 0;
+    br {
+      display: none;
+    }
+  }
+  .valueImageBlock {
+    height: 300px;
+  }
+}
+
+@include md-block {
+  .companyValuesBlockOuter {
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .values-swiper-button-next {
+    position: absolute;
+    top: auto;
+    right: 9px;
+    bottom: 37px;
+    left: auto;
+  }
+
+  .values-swiper-button-prev {
+    position: absolute;
+    top: auto;
+    bottom: 37px;
+    left: 9px;
+  }
+  .valueInfoBlock {
+    padding: 15px 30px;
+    text-align: center;
+  }
+  .valueInfoBlock .valueTitle {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1;
+    br {
+      display: none;
+    }
+  }
+  .valueInfoBlock .valueDescription {
+    font-size: 12px;
+    max-width: 500px;
+    margin: 15px auto 0;
+    text-align: center;
+  }
+  .valueImageBlock {
+    height: 200px;
+  }
+}
+
+@include sm-block {
+  .companyValuesBlockOuter {
+    margin-bottom: 10px;
+  }
+  .values-swiper-button-next {
+    top: auto;
+    right: 9px;
+    bottom: 30px;
+    left: auto;
+  }
+
+  .values-swiper-button-prev {
+    bottom: 30px;
+    left: 9px;
+  }
+  .valueInfoBlock {
+    padding: 15px 30px;
+    text-align: center;
+  }
+  .valueInfoBlock .valueTitle {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0;
+    br {
+      display: none;
+    }
+  }
+  .valueInfoBlock .valueDescription {
+    font-size: 10px;
+    margin: 5px auto 0;
+  }
+  .valueImageBlock {
+    height: 120px;
+  }
+}

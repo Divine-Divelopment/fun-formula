@@ -66,6 +66,7 @@
         "micromodal": "^0.4.6",
         "smart-grid": "^2.1.2",
         "swiper": "^5.2.1",
-        "webpack-modernizr-loader": "^5.0.0"
+        "webpack-modernizr-loader": "^5.0.0",
+        "ymaps": "^0.2.1"
     }
 }

@@ -1,0 +1,95 @@
+.numbersBlockOuter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0;
+  padding: 15px 0;
+}
+
+.numberBlock {
+  margin: -0.5px;
+  border: solid 1px var(--dark-color);
+}
+
+.numberBlockHeader {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 105px;
+  background-image: linear-gradient(to top, var(--dark-color), #303032);
+  .numberTitle {
+    display: inline-block;
+    font-size: 72px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--light-color);
+    padding: 0 15px;
+  }
+  .numberSubtitle {
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--light-color);
+    margin-bottom: 0;
+  }
+}
+
+.numberBlockMain {
+  padding: 10px 15px;
+  p {
+    margin-bottom: 0;
+    letter-spacing: 0;
+  }
+}
+
+@include xl-block {
+  .numberBlockHeader .numberTitle {
+    font-size: 45px;
+  }
+}
+
+@include lg-block {
+  .numbersBlockOuter {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 0;
+  }
+  .numberBlockHeader .numberTitle {
+    font-size: 72px;
+  }
+}
+
+@include md-block {
+  .numbersBlockOuter {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .numberBlockHeader .numberTitle {
+    font-size: 72px;
+  }
+  .numberBlockMain {
+    padding: 15px;
+  }
+}
+
+@include sm-block {
+  .numberBlockHeader .numberTitle {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+  }
+  .numberBlockHeader .numberSubtitle {
+    font-size: 10px;
+  }
+  .numberBlockHeader {
+    height: 31px;
+  }
+  .numberBlockMain {
+    padding: 10px;
+  }
+}
