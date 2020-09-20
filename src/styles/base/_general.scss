@@ -368,11 +368,20 @@ p {
     top: 0;
     right: 0;
   }
-  .tobii__slider--animate:not(.tobii__slider--is-draggable) .tobii__slider-slide {
+  .tobii__slider-slide {
+    opacity: 0;
+  }
+  .tobii__slider--animate {
+    .tobii__slider-slide {
+      opacity: 1;
+    }
+  }
+  .tobii__slider--animate:not(.tobii__slider--is-draggable) {
     top: 50%;
     left: 50% !important;
     max-width: 800px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) !important;
+    transition: opacity .3s ease-in-out;
   }
   [data-type="youtube"] {
     position: relative;
