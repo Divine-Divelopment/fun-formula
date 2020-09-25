@@ -59,6 +59,7 @@
   justify-content: space-between;
   width: 100%;
   list-style-type: none;
+  margin-bottom: 0;
 }
 
 .headerNavigationItem {
@@ -382,6 +383,12 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .submenuWrapper {
+    display: none !important;
+  }
+}
+
 @include lg-block {
   .textHeader {
     padding: 0 5px;
@@ -414,9 +421,6 @@
   }
   .headerNavigationItem {
     padding: 0 2px;
-  }
-  .submenuWrapper {
-    display: none;
   }
 }
 

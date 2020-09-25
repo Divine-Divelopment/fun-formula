@@ -17,6 +17,7 @@
 .mapBlock {
   grid-column: 2/3;
   grid-row: 1;
+  overflow: hidden;
 }
 
 .informationList {
@@ -56,7 +57,7 @@
   }
   &.phoneItem {
     &:before {
-      background-image: url("/img/svg/phone-item.svg");
+      background-image: url("../img/svg/phone-item.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -64,7 +65,7 @@
   }
   &.emailItem {
     &:before {
-      background-image: url("/img/svg/email-item.svg");
+      background-image: url("../img/svg/email-item.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -72,7 +73,7 @@
   }
   &.timeItem {
     &:before {
-      background-image: url("/img/svg/time-item.svg");
+      background-image: url("../img/svg/time-item.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -80,7 +81,7 @@
   }
   &.positionItem {
     &:before {
-      background-image: url("/img/svg/position-item.svg");
+      background-image: url("../img/svg/position-item.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -88,7 +89,7 @@
   }
   &.bankItem {
     &:before {
-      background-image: url("/img/svg/bank-item.svg");
+      background-image: url("../img/svg/bank-item.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;

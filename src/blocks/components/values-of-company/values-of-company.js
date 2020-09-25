@@ -16,21 +16,11 @@ let valuesSwiper = new Swiper(".valuesSlider", {
 
     pagination: {
         el: ".valuesPagination",
-        type: "bullets",
+        type: "fraction",
         clickable: true,
     },
     navigation: {
         nextEl: ".values-swiper-button-next",
         prevEl: ".values-swiper-button-prev",
-    },
-    breakpoints: {
-        // when window width is >= 320px
-        1024: {
-            autoHeight: false,
-            pagination: {
-                el: ".valuesPagination",
-                type: "fraction",
-            },
-        }
     }
 });

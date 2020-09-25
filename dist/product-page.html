@@ -6,7 +6,7 @@
     <title>Мастер-классы для детей</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
     <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
@@ -191,24 +191,21 @@
           <div class="pageImageSlider">
             <div class="swiper-container imageSlider">
               <div class="swiper-wrapper">
-                <div class="swiper-slide imageSlide">
-                  <picture class="mainSlideImage">
-                    <source srcset="img/slider1.webp" type="image/webp">
-                    <source srcset="img/slider1.jpg" type="image/jpeg"><img src="img/slider1.jpg" alt="Слайд">
-                  </picture>
-                </div>
-                <div class="swiper-slide imageSlide">
-                  <picture class="mainSlideImage">
-                    <source srcset="img/slider2.webp" type="image/webp">
-                    <source srcset="img/slider2.jpg" type="image/jpeg"><img src="img/slider2.jpg" alt="Слайд">
-                  </picture>
-                </div>
-                <div class="swiper-slide imageSlide">
-                  <picture class="mainSlideImage">
-                    <source srcset="img/slider3.webp" type="image/webp">
-                    <source srcset="img/slider3.jpg" type="image/jpeg"><img src="img/slider3.jpg" alt="Слайд">
-                  </picture>
-                </div>
+                <div class="swiper-slide imageSlide"><a class="imageLink lightbox" href="img/slider1.jpg" data-group="gallerySlider">
+                    <picture class="mainSlideImage">
+                      <source srcset="img/slider1.webp" type="image/webp">
+                      <source srcset="img/slider1.jpg" type="image/jpeg"><img src="img/slider1.jpg" alt="Слайд">
+                    </picture></a></div>
+                <div class="swiper-slide imageSlide"><a class="imageLink lightbox" href="img/slider2.jpg" data-group="gallerySlider">
+                    <picture class="mainSlideImage">
+                      <source srcset="img/slider2.webp" type="image/webp">
+                      <source srcset="img/slider2.jpg" type="image/jpeg"><img src="img/slider2.jpg" alt="Слайд">
+                    </picture></a></div>
+                <div class="swiper-slide imageSlide"><a class="imageLink lightbox" href="img/slider3.jpg" data-group="gallerySlider">
+                    <picture class="mainSlideImage">
+                      <source srcset="img/slider3.webp" type="image/webp">
+                      <source srcset="img/slider3.jpg" type="image/jpeg"><img src="img/slider3.jpg" alt="Слайд">
+                    </picture></a></div>
               </div>
               <button class="swiper-button-prev image-swiper-button-prev"></button>
               <button class="swiper-button-next image-swiper-button-next"></button>
@@ -452,7 +449,7 @@
             <li class="socialNetworkItem"><a class="socialNetworkLink" href=""><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
           </ul>
           <div class="newsFormWrapper">
-            <p class="formTitle">Подпешитесь на наши новости</p>
+            <p class="formTitle">Подпишитесь на наши новости</p>
             <form class="newsForm">
               <fieldset class="newsFormField">
                 <input type="email" inputmode="email" placeholder="E-mail">

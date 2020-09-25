@@ -30,11 +30,24 @@ body {
   position: relative;
   min-width: 320px;
   min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
   &>svg {
     opacity: 0;
     width: 0;
     height: 0;
     visibility: hidden;
+  }
+}
+section {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.textWrapper {
+  &>h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin-bottom: 10px;
   }
 }
 
@@ -49,13 +62,16 @@ h1 {
 h2 {
   font-size: 26px;
 }
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
 ol {
   list-style-type: decimal;
   list-style-position: inside;
   margin-bottom: 10px;
-  &:last-child {
-    margin-bottom: 0;
-  }
   li {
     font-family: var(--secondary-family);
     font-size: 15px;
@@ -76,9 +92,6 @@ ul {
   list-style-type: disc;
   list-style-position: inside;
   margin-bottom: 10px;
-  &:last-child {
-    margin-bottom: 0;
-  }
   li {
     font-family: var(--secondary-family);
     font-size: 15px;
@@ -400,14 +413,23 @@ p {
 }
 
 @include lg-block {
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
   .titleBlock h1 {
     font-size: 26px;
   }
   .titleBlock h2 {
     font-size: 24px;
-  }
-  .callbackFormBlock {
-    padding: 40px 0;
   }
   p, ul li, ol li {
     font-size: 12px;
@@ -431,9 +453,40 @@ p {
       }
     }
   }
+  .callbackFormBlock {
+    padding: 40px 0;
+    &.secondBackground {
+      background-position: top;
+    }
+    &.thirdBackground {
+      background-position: top;
+    }
+  }
+  .noWebp {
+    .callbackFormBlock {
+      &.secondBackground {
+        background-position: top;
+      }
+      &.thirdBackground {
+        background-position: top;
+      }
+    }
+  }
 }
 
 @include md-block {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
   .titleBlock h1 {
     font-size: 20px;
     padding: 11px 0 7px;
@@ -448,9 +501,11 @@ p {
       background-attachment: scroll;
     }
     &.secondBackground {
+      background-position: center;
       background-attachment: scroll;
     }
     &.thirdBackground {
+      background-position: center;
       background-attachment: scroll;
     }
     &.fourthBackground {
@@ -469,9 +524,11 @@ p {
         background-attachment: scroll;
       }
       &.secondBackground {
+        background-position: center;
         background-attachment: scroll;
       }
       &.thirdBackground {
+        background-position: center;
         background-attachment: scroll;
       }
       &.fourthBackground {
@@ -515,6 +572,18 @@ p {
 }
 
 @include sm-block {
+  h1 {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 10px;
+  }
+  h4 {
+    font-size: 10px;
+  }
   .titleBlock h1 {
     font-size: 14px;
     padding: 7px 0 4px;

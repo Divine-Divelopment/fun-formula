@@ -104,8 +104,10 @@
     --swiper-pagination-color: var(--light-color);
     display: flex;
     justify-content: center;
-    top: 215px;
+    top: auto;
+    bottom: 100px;
     left: 50% !important;
+    height: auto;
     padding: 7px 0;
     transform: translateX(-50%);
     .swiper-pagination-bullet {
@@ -114,6 +116,8 @@
       outline: none;
       background: var(--light-color);
       opacity: .4;
+      margin: 0 4px;
+      padding: 0;
     }
     .swiper-pagination-bullet-active {
       opacity: 1;
@@ -137,7 +141,8 @@
     left: 19px;
   }
   .valueInfoBlock {
-    padding: 30px 80px;
+    min-height: 187px;
+    padding: 80px 80px 30px;
     text-align: center;
   }
   .valueInfoBlock .valueTitle {
@@ -164,6 +169,15 @@
 }
 
 @include md-block {
+  .valuesPagination {
+    bottom: 75px;
+    line-height: 20px;
+    font-size: 15px;
+    .swiper-pagination-current {
+      font-size: 20px;
+      top: -3px;
+    }
+  }
   .companyValuesBlockOuter {
     margin-bottom: 10px;
     margin-top: 5px;
@@ -182,10 +196,6 @@
     bottom: 37px;
     left: 9px;
   }
-  .valueInfoBlock {
-    padding: 15px 30px;
-    text-align: center;
-  }
   .valueInfoBlock .valueTitle {
     font-size: 15px;
     text-align: center;
@@ -203,8 +213,10 @@
   .valueImageBlock {
     height: 200px;
   }
-  .valuesPagination {
-    top: 125px;
+  .valueInfoBlock {
+    min-height: 120px;
+    padding: 50px 30px 15px;
+    text-align: center;
   }
 }
 
@@ -224,7 +236,8 @@
     left: 9px;
   }
   .valueInfoBlock {
-    padding: 15px 30px;
+    min-height: 110px;
+    padding: 35px 30px 15px;
     text-align: center;
   }
   .valueInfoBlock .valueTitle {
@@ -242,5 +255,8 @@
   }
   .valueImageBlock {
     height: 120px;
+  }
+  .valuesPagination.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 70px;
   }
 }

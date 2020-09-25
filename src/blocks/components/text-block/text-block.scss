@@ -9,6 +9,12 @@
   grid-gap: 19px;
 }
 
+.imageLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .pageTextInfo {
   grid-column: 2/3;
   grid-row: 1;

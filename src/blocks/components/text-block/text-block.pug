@@ -11,19 +11,22 @@
                 .swiper-container.imageSlider
                     .swiper-wrapper
                         .swiper-slide.imageSlide
-                            picture.mainSlideImage
-                                source(srcset="img/slider1.webp" type="image/webp")
-                                source(srcset="img/slider1.jpg" type="image/jpeg")
-                                img(src="img/slider1.jpg", alt="Слайд")
+                            a.imageLink.lightbox(href="img/slider1.jpg", data-group="gallerySlider")
+                                picture.mainSlideImage
+                                    source(srcset="img/slider1.webp" type="image/webp")
+                                    source(srcset="img/slider1.jpg" type="image/jpeg")
+                                    img(src="img/slider1.jpg", alt="Слайд")
                         .swiper-slide.imageSlide
-                            picture.mainSlideImage
-                                source(srcset="img/slider2.webp" type="image/webp")
-                                source(srcset="img/slider2.jpg" type="image/jpeg")
-                                img(src="img/slider2.jpg", alt="Слайд")
+                            a.imageLink.lightbox(href="img/slider2.jpg", data-group="gallerySlider")
+                                picture.mainSlideImage
+                                    source(srcset="img/slider2.webp" type="image/webp")
+                                    source(srcset="img/slider2.jpg" type="image/jpeg")
+                                    img(src="img/slider2.jpg", alt="Слайд")
                         .swiper-slide.imageSlide
-                            picture.mainSlideImage
-                                source(srcset="img/slider3.webp" type="image/webp")
-                                source(srcset="img/slider3.jpg" type="image/jpeg")
-                                img(src="img/slider3.jpg", alt="Слайд")
+                            a.imageLink.lightbox(href="img/slider3.jpg", data-group="gallerySlider")
+                                picture.mainSlideImage
+                                    source(srcset="img/slider3.webp" type="image/webp")
+                                    source(srcset="img/slider3.jpg" type="image/jpeg")
+                                    img(src="img/slider3.jpg", alt="Слайд")
                     button.swiper-button-prev.image-swiper-button-prev
                     button.swiper-button-next.image-swiper-button-next
