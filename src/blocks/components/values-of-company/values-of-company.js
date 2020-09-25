@@ -16,6 +16,8 @@ let valuesSwiper = new Swiper(".valuesSlider", {
 
     pagination: {
         el: ".valuesPagination",
+        type: "bullets",
+        clickable: true,
     },
     navigation: {
         nextEl: ".values-swiper-button-next",

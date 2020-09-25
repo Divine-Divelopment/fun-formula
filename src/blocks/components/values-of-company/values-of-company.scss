@@ -101,7 +101,26 @@
     min-height: auto;
   }
   .valuesPagination {
-    display: none;
+    --swiper-pagination-color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    top: 215px;
+    left: 50% !important;
+    padding: 7px 0;
+    transform: translateX(-50%);
+    .swiper-pagination-bullet {
+      width: 15px;
+      height: 15px;
+      outline: none;
+      background: var(--light-color);
+      opacity: .4;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+      bottom: 15px;
+    }
   }
   .values-swiper-button-next {
     position: absolute;
@@ -183,6 +202,9 @@
   }
   .valueImageBlock {
     height: 200px;
+  }
+  .valuesPagination {
+    top: 125px;
   }
 }
 

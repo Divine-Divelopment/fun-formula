@@ -10,8 +10,12 @@ class TabList {
     }
 
     openTab(index) {
-        this.tabs.querySelector(".active").classList.remove("active");
-        this.tabs.querySelector(`.tab--${index}`).classList.add("active");
+        this.tabs.querySelector(".animate").style.display = "none";
+        this.tabs.querySelector(".animate").classList.remove("animate");
+        this.tabs.querySelector(`.tab--${index}`).style.display = "block";
+        setTimeout(()=>{
+            this.tabs.querySelector(`.tab--${index}`).classList.add("animate");
+        },100);
     }
 }
 

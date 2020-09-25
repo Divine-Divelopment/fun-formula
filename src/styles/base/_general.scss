@@ -379,7 +379,8 @@ p {
   .tobii__slider--animate:not(.tobii__slider--is-draggable) {
     top: 50%;
     left: 50% !important;
-    max-width: 800px;
+    width: 100%;
+    max-width: 640px;
     transform: translate(-50%, -50%) !important;
     transition: opacity 0s ease-in-out;
   }
