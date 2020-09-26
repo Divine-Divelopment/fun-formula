@@ -63,6 +63,7 @@
 }
 
 .headerNavigationItem {
+  cursor: pointer;
   padding: 0 5px;
   &:hover {
     .headerNavigationLink {
@@ -358,6 +359,10 @@
   padding: 0 5px;
 }
 
+#submenuLink {
+  pointer-events: none;
+}
+
 .subcategoryList {
   width: 100%;
   list-style-type: none;
@@ -383,13 +388,13 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .submenuWrapper {
-    display: none !important;
-  }
-}
-
 @include lg-block {
+  .submenuWrapper {
+    padding: 15px 0;
+  }
+  .submenuBlockOuter {
+    max-height: calc(100vh - 94px);
+  }
   .textHeader {
     padding: 0 5px;
     font-size: 18px;
@@ -425,6 +430,9 @@
 }
 
 @include md-block {
+  #submenuLink {
+    pointer-events: visible;
+  }
   .header {
     position: sticky;
     z-index: 100;
@@ -436,6 +444,9 @@
   }
   .textHeader {
     display: none;
+  }
+  .submenuWrapper {
+    display: none !important;
   }
   .headerButton {
     position: fixed;

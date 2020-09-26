@@ -41,7 +41,6 @@
 }
 
 .personQuote {
-  font-size: 15px;
   font-weight: 400;
   font-stretch: normal;
   font-style: normal;
@@ -52,9 +51,6 @@
 }
 
 @include lg-block {
-  .personQuote {
-    font-size: 10px;
-  }
   .personName {
     font-size: 14px;
   }

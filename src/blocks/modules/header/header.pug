@@ -53,8 +53,10 @@ nav.headerNavigation#navigationMenu
         ul.headerNavigationList
             each item in navigation
                 li.headerNavigationItem
-                    a.headerNavigationLink(href="")=item
-                    if (item === "Мальчикам")
+                    if (item !== "Мальчикам")
+                        a.headerNavigationLink(href="")=item
+                    else
+                        a.headerNavigationLink#submenuLink(href="")=item
                         div.submenuWrapper
                             .container.submenuBlockOuter
                                 ul.submenuBlock
