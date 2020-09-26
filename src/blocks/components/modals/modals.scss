@@ -14,6 +14,21 @@
   cursor: pointer;
 }
 
+.modal__container .modal__close:before {
+  content: "\2715";
+}
+
+.thanksModalContainer {
+  padding-top: 45px;
+}
+
+.thanksModalContent {
+  text-align: center;
+  p {
+    text-align: center;
+  }
+}
+
 .modal__content {
   margin: 0;
 }
@@ -107,6 +122,10 @@
   }
   .modal__container {
     padding: 20px 25px;
+  }
+
+  .thanksModalContainer {
+    padding-top: 20px;
   }
 }
 
