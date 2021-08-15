@@ -338,11 +338,14 @@
 }
 
 .submenuBlock {
-  display: block;
-  column-count: 4;
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.submenuItem {
+  flex-basis: 25%;
 }
 
 .submenuLink {
